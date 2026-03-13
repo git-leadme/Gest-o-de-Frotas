@@ -1,4 +1,4 @@
-import { Cpu, Eye, Radio, ShieldAlert } from 'lucide-react'
+import { Cpu, Eye, Video, ShieldAlert } from 'lucide-react'
 
 export function Technology() {
   return (
@@ -19,9 +19,8 @@ export function Technology() {
             <Eye className="h-12 w-12 text-secondary mb-6" strokeWidth={1.5} />
             <h3 className="text-2xl font-bold text-primary mb-4">Câmeras com IA (DMS)</h3>
             <p className="text-gray-600 leading-relaxed">
-              O Sistema de Monitoramento de Motorista (DMS) detecta sinais de fadiga, distração, uso
-              de celular e cigarro. O sistema emite alertas sonoros na cabine em tempo real para
-              prevenir acidentes antes que aconteçam.
+              Monitoramento avançado que detecta sinais de fadiga, distração e uso de celular. O
+              sistema emite alertas na cabine em tempo real para prevenir acidentes.
             </p>
           </div>
 
@@ -30,18 +29,7 @@ export function Technology() {
             <h3 className="text-2xl font-bold text-primary mb-4">ADAS (Alertas de Colisão)</h3>
             <p className="text-gray-600 leading-relaxed">
               O Sistema Avançado de Assistência ao Condutor emite alertas de colisão frontal, saída
-              involuntária de faixa e proximidade perigosa, atuando como um copiloto virtual
-              implacável para o motorista.
-            </p>
-          </div>
-
-          <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
-            <Radio className="h-12 w-12 text-secondary mb-6" strokeWidth={1.5} />
-            <h3 className="text-2xl font-bold text-primary mb-4">Livestreaming</h3>
-            <p className="text-gray-600 leading-relaxed">
-              Tenha acesso às câmeras dos veículos em tempo real, de qualquer lugar. Visualize a
-              estrada e a cabine simultaneamente, garantindo total transparência e agilidade na
-              resolução de qualquer ocorrência.
+              involuntária de faixa e proximidade perigosa, atuando como um copiloto virtual.
             </p>
           </div>
 
@@ -49,9 +37,18 @@ export function Technology() {
             <Cpu className="h-12 w-12 text-secondary mb-6" strokeWidth={1.5} />
             <h3 className="text-2xl font-bold text-primary mb-4">Telemetria Avançada</h3>
             <p className="text-gray-600 leading-relaxed">
-              Coleta de dados precisos sobre o comportamento de direção: acelerações, frenagens
-              bruscas e curvas acentuadas. Isso permite a criação de um ranking de motoristas,
-              premiando boas práticas.
+              Coleta de dados precisos sobre o comportamento de direção, consumo de combustível e
+              performance do veículo. Crie rankings de motoristas e premie boas práticas.
+            </p>
+          </div>
+
+          <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+            <Video className="h-12 w-12 text-secondary mb-6" strokeWidth={1.5} />
+            <h3 className="text-2xl font-bold text-primary mb-4">Videomonitoramento</h3>
+            <p className="text-gray-600 leading-relaxed">
+              Mitigação de acidentes impulsionada por IA. Acompanhe a estrada e a cabine
+              simultaneamente, garantindo total transparência e evidências em vídeo para qualquer
+              ocorrência.
             </p>
           </div>
         </div>

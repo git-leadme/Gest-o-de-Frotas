@@ -1,26 +1,26 @@
-import { TrendingUp, Clock, AlertTriangle, Wrench, Timer } from 'lucide-react'
+import { TrendingUp, Clock, AlertTriangle, Wrench, Wallet } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 
 const benefits = [
   {
     icon: TrendingUp,
-    text: 'Aumento da produtividade da frota.',
+    text: 'Aumento da produtividade',
   },
   {
     icon: Clock,
-    text: 'Redução da ociosidade dos veículos.',
+    text: 'Redução da ociosidade',
   },
   {
     icon: AlertTriangle,
-    text: 'Redução de custos com multas, acidentes e processos judiciais.',
+    text: 'Redução de custos com multas e acidentes',
   },
   {
     icon: Wrench,
-    text: 'Redução de custos com manutenção e combustível.',
+    text: 'Redução de manutenção e combustível',
   },
   {
-    icon: Timer,
-    text: 'Redução dos custos com tempo operacional.',
+    icon: Wallet,
+    text: 'Redução de custos operacionais',
   },
 ]
 
@@ -42,7 +42,7 @@ export function Benefits() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12 justify-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 mb-12 justify-center">
           {benefits.map((benefit, idx) => (
             <div
               key={idx}
@@ -51,7 +51,7 @@ export function Benefits() {
               <div className="h-16 w-16 bg-secondary/10 rounded-full flex items-center justify-center mb-4">
                 <benefit.icon className="h-8 w-8 text-secondary" strokeWidth={1.5} />
               </div>
-              <p className="font-semibold text-lg text-primary">{benefit.text}</p>
+              <p className="font-semibold text-primary">{benefit.text}</p>
             </div>
           ))}
         </div>

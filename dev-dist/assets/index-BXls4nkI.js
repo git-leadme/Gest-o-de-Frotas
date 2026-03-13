@@ -20782,6 +20782,17 @@ var Eye = createLucideIcon("eye", [["path", {
 	r: "3",
 	key: "1v7zrd"
 }]]);
+var Mail = createLucideIcon("mail", [["path", {
+	d: "m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7",
+	key: "132q7q"
+}], ["rect", {
+	x: "2",
+	y: "4",
+	width: "20",
+	height: "16",
+	rx: "2",
+	key: "izxlao"
+}]]);
 var MapPin = createLucideIcon("map-pin", [["path", {
 	d: "M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0",
 	key: "1r0f0z"
@@ -20805,30 +20816,10 @@ var Map$1 = createLucideIcon("map", [
 		key: "1uimfh"
 	}]
 ]);
-var Radio = createLucideIcon("radio", [
-	["path", {
-		d: "M16.247 7.761a6 6 0 0 1 0 8.478",
-		key: "1fwjs5"
-	}],
-	["path", {
-		d: "M19.075 4.933a10 10 0 0 1 0 14.134",
-		key: "ehdyv1"
-	}],
-	["path", {
-		d: "M4.925 19.067a10 10 0 0 1 0-14.134",
-		key: "1q22gi"
-	}],
-	["path", {
-		d: "M7.753 16.239a6 6 0 0 1 0-8.478",
-		key: "r2q7qm"
-	}],
-	["circle", {
-		cx: "12",
-		cy: "12",
-		r: "2",
-		key: "1c9p78"
-	}]
-]);
+var Phone = createLucideIcon("phone", [["path", {
+	d: "M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384",
+	key: "9njp5v"
+}]]);
 var ShieldAlert = createLucideIcon("shield-alert", [
 	["path", {
 		d: "M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z",
@@ -20854,28 +20845,6 @@ var Shield = createLucideIcon("shield", [["path", {
 	d: "M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z",
 	key: "oel41y"
 }]]);
-var Timer = createLucideIcon("timer", [
-	["line", {
-		x1: "10",
-		x2: "14",
-		y1: "2",
-		y2: "2",
-		key: "14vaq8"
-	}],
-	["line", {
-		x1: "12",
-		x2: "15",
-		y1: "14",
-		y2: "11",
-		key: "17fdiu"
-	}],
-	["circle", {
-		cx: "12",
-		cy: "14",
-		r: "8",
-		key: "1e1u0o"
-	}]
-]);
 var Tractor = createLucideIcon("tractor", [
 	["path", {
 		d: "m10 11 11 .9a1 1 0 0 1 .8 1.1l-.665 4.158a1 1 0 0 1-.988.842H20",
@@ -20972,6 +20941,24 @@ var Truck = createLucideIcon("truck", [
 		key: "19iecd"
 	}]
 ]);
+var Video = createLucideIcon("video", [["path", {
+	d: "m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5",
+	key: "ftymec"
+}], ["rect", {
+	x: "2",
+	y: "6",
+	width: "14",
+	height: "12",
+	rx: "2",
+	key: "158x01"
+}]]);
+var Wallet = createLucideIcon("wallet", [["path", {
+	d: "M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1",
+	key: "18etb6"
+}], ["path", {
+	d: "M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4",
+	key: "xoc0q4"
+}]]);
 var Wrench = createLucideIcon("wrench", [["path", {
 	d: "M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.106-3.105c.32-.322.863-.22.983.218a6 6 0 0 1-8.259 7.057l-7.91 7.91a1 1 0 0 1-2.999-3l7.91-7.91a6 6 0 0 1 7.057-8.259c.438.12.54.662.219.984z",
 	key: "1ngwbx"
@@ -21099,26 +21086,26 @@ function Layout() {
 		document.getElementById("lead-form")?.scrollIntoView({ behavior: "smooth" });
 	};
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-		"data-uid": "src/components/Layout.tsx:12:5",
-		"data-prohibitions": "[]",
-		className: "min-h-screen flex flex-col",
+		"data-uid": "src/components/Layout.tsx:13:5",
+		"data-prohibitions": "[editContent]",
+		className: "min-h-screen flex flex-col font-sans",
 		children: [
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("header", {
-				"data-uid": "src/components/Layout.tsx:13:7",
+				"data-uid": "src/components/Layout.tsx:14:7",
 				"data-prohibitions": "[]",
 				className: "sticky top-0 z-50 w-full border-b bg-white shadow-sm",
 				children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-					"data-uid": "src/components/Layout.tsx:14:9",
+					"data-uid": "src/components/Layout.tsx:15:9",
 					"data-prohibitions": "[]",
 					className: "container mx-auto px-4 h-20 flex items-center justify-between",
 					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
-						"data-uid": "src/components/Layout.tsx:15:11",
+						"data-uid": "src/components/Layout.tsx:16:11",
 						"data-prohibitions": "[editContent]",
 						src: logo_carsystem_afa58_default,
 						alt: "CarSystem",
 						className: "h-8 md:h-10 object-contain"
 					}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Button, {
-						"data-uid": "src/components/Layout.tsx:16:11",
+						"data-uid": "src/components/Layout.tsx:17:11",
 						"data-prohibitions": "[]",
 						onClick: scrollToForm,
 						className: "bg-secondary text-secondary-foreground hover:bg-secondary/90 font-bold",
@@ -21127,16 +21114,170 @@ function Layout() {
 				})
 			}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("main", {
-				"data-uid": "src/components/Layout.tsx:24:7",
+				"data-uid": "src/components/Layout.tsx:25:7",
 				"data-prohibitions": "[]",
 				className: "flex-1",
 				children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Outlet, {
-					"data-uid": "src/components/Layout.tsx:25:9",
+					"data-uid": "src/components/Layout.tsx:26:9",
 					"data-prohibitions": "[editContent]"
 				})
 			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("footer", {
+				"data-uid": "src/components/Layout.tsx:28:7",
+				"data-prohibitions": "[editContent]",
+				className: "bg-primary text-primary-foreground py-12 border-t border-primary-foreground/10",
+				children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+					"data-uid": "src/components/Layout.tsx:29:9",
+					"data-prohibitions": "[editContent]",
+					className: "container mx-auto px-4",
+					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+						"data-uid": "src/components/Layout.tsx:30:11",
+						"data-prohibitions": "[]",
+						className: "grid md:grid-cols-3 gap-8 mb-8",
+						children: [
+							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+								"data-uid": "src/components/Layout.tsx:31:13",
+								"data-prohibitions": "[]",
+								className: "space-y-4",
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
+									"data-uid": "src/components/Layout.tsx:32:15",
+									"data-prohibitions": "[editContent]",
+									src: logo_carsystem_afa58_default,
+									alt: "CarSystem",
+									className: "h-8 object-contain brightness-0 invert"
+								}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+									"data-uid": "src/components/Layout.tsx:37:15",
+									"data-prohibitions": "[]",
+									className: "text-primary-foreground/80 text-sm max-w-xs",
+									children: "Gestão Inteligente de Frotas com tecnologia de ponta para reduzir custos e aumentar a segurança da sua operação."
+								})]
+							}),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+								"data-uid": "src/components/Layout.tsx:43:13",
+								"data-prohibitions": "[]",
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", {
+									"data-uid": "src/components/Layout.tsx:44:15",
+									"data-prohibitions": "[]",
+									className: "font-bold text-lg mb-4 text-secondary",
+									children: "Contato"
+								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ul", {
+									"data-uid": "src/components/Layout.tsx:45:15",
+									"data-prohibitions": "[]",
+									className: "space-y-3",
+									children: [
+										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+											"data-uid": "src/components/Layout.tsx:46:17",
+											"data-prohibitions": "[]",
+											className: "flex items-center gap-2 text-primary-foreground/80",
+											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Phone, {
+												"data-uid": "src/components/Layout.tsx:47:19",
+												"data-prohibitions": "[editContent]",
+												className: "h-4 w-4 text-secondary"
+											}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+												"data-uid": "src/components/Layout.tsx:48:19",
+												"data-prohibitions": "[]",
+												children: "0800 770 0000"
+											})]
+										}),
+										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+											"data-uid": "src/components/Layout.tsx:50:17",
+											"data-prohibitions": "[]",
+											className: "flex items-center gap-2 text-primary-foreground/80",
+											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Mail, {
+												"data-uid": "src/components/Layout.tsx:51:19",
+												"data-prohibitions": "[editContent]",
+												className: "h-4 w-4 text-secondary"
+											}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+												"data-uid": "src/components/Layout.tsx:52:19",
+												"data-prohibitions": "[]",
+												children: "comercial@carsystem.com"
+											})]
+										}),
+										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+											"data-uid": "src/components/Layout.tsx:54:17",
+											"data-prohibitions": "[]",
+											className: "flex items-center gap-2 text-primary-foreground/80",
+											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(MapPin, {
+												"data-uid": "src/components/Layout.tsx:55:19",
+												"data-prohibitions": "[editContent]",
+												className: "h-4 w-4 text-secondary"
+											}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+												"data-uid": "src/components/Layout.tsx:56:19",
+												"data-prohibitions": "[]",
+												children: "Atuação em todo o Brasil"
+											})]
+										})
+									]
+								})]
+							}),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+								"data-uid": "src/components/Layout.tsx:61:13",
+								"data-prohibitions": "[]",
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", {
+									"data-uid": "src/components/Layout.tsx:62:15",
+									"data-prohibitions": "[]",
+									className: "font-bold text-lg mb-4 text-secondary",
+									children: "Acesso Rápido"
+								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ul", {
+									"data-uid": "src/components/Layout.tsx:63:15",
+									"data-prohibitions": "[]",
+									className: "space-y-2",
+									children: [
+										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", {
+											"data-uid": "src/components/Layout.tsx:64:17",
+											"data-prohibitions": "[]",
+											children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+												"data-uid": "src/components/Layout.tsx:65:19",
+												"data-prohibitions": "[]",
+												onClick: scrollToForm,
+												className: "text-primary-foreground/80 hover:text-secondary transition-colors text-left",
+												children: "Agendar Demonstração"
+											})
+										}),
+										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", {
+											"data-uid": "src/components/Layout.tsx:72:17",
+											"data-prohibitions": "[]",
+											children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
+												"data-uid": "src/components/Layout.tsx:73:19",
+												"data-prohibitions": "[]",
+												href: "#",
+												className: "text-primary-foreground/80 hover:text-secondary transition-colors",
+												children: "Política de Privacidade"
+											})
+										}),
+										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", {
+											"data-uid": "src/components/Layout.tsx:80:17",
+											"data-prohibitions": "[]",
+											children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
+												"data-uid": "src/components/Layout.tsx:81:19",
+												"data-prohibitions": "[]",
+												href: "#",
+												className: "text-primary-foreground/80 hover:text-secondary transition-colors",
+												children: "Termos de Uso"
+											})
+										})
+									]
+								})]
+							})
+						]
+					}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+						"data-uid": "src/components/Layout.tsx:92:11",
+						"data-prohibitions": "[editContent]",
+						className: "pt-8 border-t border-primary-foreground/10 text-center text-sm text-primary-foreground/60",
+						children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+							"data-uid": "src/components/Layout.tsx:93:13",
+							"data-prohibitions": "[editContent]",
+							children: [
+								"© ",
+								(/* @__PURE__ */ new Date()).getFullYear(),
+								" CarSystem. Todos os direitos reservados."
+							]
+						})
+					})]
+				})
+			}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Toaster, {
-				"data-uid": "src/components/Layout.tsx:27:7",
+				"data-uid": "src/components/Layout.tsx:97:7",
 				"data-prohibitions": "[editContent]"
 			})
 		]
@@ -31037,60 +31178,104 @@ function LeadForm() {
 function Hero() {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
 		"data-uid": "src/components/sections/Hero.tsx:5:5",
-		"data-prohibitions": "[]",
+		"data-prohibitions": "[editContent]",
 		className: "relative bg-primary text-primary-foreground py-16 md:py-24 overflow-hidden",
 		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 			"data-uid": "src/components/sections/Hero.tsx:6:7",
-			"data-prohibitions": "[]",
+			"data-prohibitions": "[editContent]",
 			className: "absolute inset-0 z-0",
-			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-				"data-uid": "src/components/sections/Hero.tsx:7:9",
-				"data-prohibitions": "[editContent]",
-				className: "absolute inset-0 bg-primary/80 z-10"
-			}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
-				"data-uid": "src/components/sections/Hero.tsx:8:9",
-				"data-prohibitions": "[editContent]",
-				src: "https://img.usecurling.com/p/1920/1080?q=trucks%20fleet",
-				alt: "Frota",
-				className: "w-full h-full object-cover"
-			})]
+			children: [
+				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+					"data-uid": "src/components/sections/Hero.tsx:7:9",
+					"data-prohibitions": "[editContent]",
+					className: "absolute inset-0 bg-primary/85 z-10 mix-blend-multiply"
+				}),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+					"data-uid": "src/components/sections/Hero.tsx:8:9",
+					"data-prohibitions": "[editContent]",
+					className: "absolute inset-0 bg-gradient-to-r from-primary via-primary/90 to-transparent z-10"
+				}),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
+					"data-uid": "src/components/sections/Hero.tsx:9:9",
+					"data-prohibitions": "[editContent]",
+					src: "https://img.usecurling.com/p/1920/1080?q=connected%20fleet%20trucks&color=blue",
+					alt: "Frota Conectada",
+					className: "w-full h-full object-cover"
+				}),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+					"data-uid": "src/components/sections/Hero.tsx:15:9",
+					"data-prohibitions": "[editContent]",
+					className: "absolute inset-0 z-10 opacity-20 bg-[radial-gradient(#aede00_1px,transparent_1px)] [background-size:20px_20px]"
+				})
+			]
 		}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-			"data-uid": "src/components/sections/Hero.tsx:14:7",
+			"data-uid": "src/components/sections/Hero.tsx:18:7",
 			"data-prohibitions": "[]",
 			className: "container mx-auto px-4 relative z-20",
 			children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-				"data-uid": "src/components/sections/Hero.tsx:15:9",
+				"data-uid": "src/components/sections/Hero.tsx:19:9",
 				"data-prohibitions": "[]",
-				className: "grid md:grid-cols-2 gap-12 items-center",
+				className: "grid lg:grid-cols-2 gap-12 items-center",
 				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-					"data-uid": "src/components/sections/Hero.tsx:16:11",
+					"data-uid": "src/components/sections/Hero.tsx:20:11",
 					"data-prohibitions": "[]",
-					className: "space-y-6 animate-fade-in-up",
-					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h1", {
-						"data-uid": "src/components/sections/Hero.tsx:17:13",
-						"data-prohibitions": "[]",
-						className: "text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight",
-						children: "Gestão Inteligente da Sua Frota: Reduza Custos, Aumente a Produtividade e Garanta a Segurança com a CarSystem."
-					}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-						"data-uid": "src/components/sections/Hero.tsx:21:13",
-						"data-prohibitions": "[]",
-						className: "text-lg md:text-xl text-primary-foreground/90 font-light",
-						children: "Tecnologia de ponta com IA, Telemetria e ADAS para você ter o controle total da sua operação."
-					})]
+					className: "space-y-6 animate-fade-in-up max-w-2xl",
+					children: [
+						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+							"data-uid": "src/components/sections/Hero.tsx:21:13",
+							"data-prohibitions": "[]",
+							className: "inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary/20 text-secondary border border-secondary/30 text-sm font-semibold mb-2",
+							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
+								"data-uid": "src/components/sections/Hero.tsx:22:15",
+								"data-prohibitions": "[]",
+								className: "relative flex h-2 w-2",
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+									"data-uid": "src/components/sections/Hero.tsx:23:17",
+									"data-prohibitions": "[]",
+									className: "animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"
+								}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+									"data-uid": "src/components/sections/Hero.tsx:24:17",
+									"data-prohibitions": "[]",
+									className: "relative inline-flex rounded-full h-2 w-2 bg-secondary"
+								})]
+							}), "Tecnologia de Ponta"]
+						}),
+						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h1", {
+							"data-uid": "src/components/sections/Hero.tsx:28:13",
+							"data-prohibitions": "[]",
+							className: "text-4xl md:text-5xl lg:text-6xl font-extrabold leading-[1.15] tracking-tight",
+							children: "Gestão Inteligente da Sua Frota: Reduza Custos, Aumente a Produtividade e Garanta a Segurança com a CarSystem."
+						}),
+						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+							"data-uid": "src/components/sections/Hero.tsx:32:13",
+							"data-prohibitions": "[]",
+							className: "text-lg md:text-xl text-primary-foreground/90 font-light leading-relaxed",
+							children: "Tecnologia avançada com IA, Telemetria e Videomonitoramento para você ter o controle total da sua operação e focar no que realmente importa: resultados."
+						})
+					]
 				}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-					"data-uid": "src/components/sections/Hero.tsx:26:11",
+					"data-uid": "src/components/sections/Hero.tsx:37:11",
 					"data-prohibitions": "[]",
 					id: "lead-form",
-					className: "bg-white rounded-xl shadow-2xl p-6 md:p-8 text-foreground animate-fade-in",
-					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
-						"data-uid": "src/components/sections/Hero.tsx:30:13",
-						"data-prohibitions": "[]",
-						className: "text-2xl font-bold mb-6 text-center text-primary",
-						children: "Agende sua Demonstração Gratuita"
-					}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(LeadForm, {
-						"data-uid": "src/components/sections/Hero.tsx:33:13",
-						"data-prohibitions": "[editContent]"
-					})]
+					className: "bg-white rounded-2xl shadow-2xl p-6 md:p-8 text-foreground animate-fade-in lg:ml-auto w-full max-w-md border border-gray-100 relative",
+					children: [
+						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+							"data-uid": "src/components/sections/Hero.tsx:41:13",
+							"data-prohibitions": "[]",
+							className: "absolute -top-4 -right-4 bg-secondary text-primary font-bold px-4 py-2 rounded-lg shadow-lg rotate-3",
+							children: "Fale com um Especialista"
+						}),
+						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
+							"data-uid": "src/components/sections/Hero.tsx:44:13",
+							"data-prohibitions": "[]",
+							className: "text-2xl font-bold mb-6 text-center text-primary mt-2",
+							children: "Agende sua Demonstração Gratuita"
+						}),
+						/* @__PURE__ */ (0, import_jsx_runtime.jsx)(LeadForm, {
+							"data-uid": "src/components/sections/Hero.tsx:47:13",
+							"data-prohibitions": "[editContent]"
+						})
+					]
 				})]
 			})
 		})]
@@ -31101,23 +31286,23 @@ function Hero() {
 var benefits = [
 	{
 		icon: TrendingUp,
-		text: "Aumento da produtividade da frota."
+		text: "Aumento da produtividade"
 	},
 	{
 		icon: Clock,
-		text: "Redução da ociosidade dos veículos."
+		text: "Redução da ociosidade"
 	},
 	{
 		icon: TriangleAlert,
-		text: "Redução de custos com multas, acidentes e processos judiciais."
+		text: "Redução de custos com multas e acidentes"
 	},
 	{
 		icon: Wrench,
-		text: "Redução de custos com manutenção e combustível."
+		text: "Redução de manutenção e combustível"
 	},
 	{
-		icon: Timer,
-		text: "Redução dos custos com tempo operacional."
+		icon: Wallet,
+		text: "Redução de custos operacionais"
 	}
 ];
 function Benefits() {
@@ -31152,7 +31337,7 @@ function Benefits() {
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 					"data-uid": "src/components/sections/Benefits.tsx:45:9",
 					"data-prohibitions": "[editContent]",
-					className: "grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12 justify-center",
+					className: "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 mb-12 justify-center",
 					children: benefits.map((benefit, idx) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 						"data-uid": "src/components/sections/Benefits.tsx:47:13",
 						"data-prohibitions": "[editContent]",
@@ -31170,7 +31355,7 @@ function Benefits() {
 						}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 							"data-uid": "src/components/sections/Benefits.tsx:54:15",
 							"data-prohibitions": "[editContent]",
-							className: "font-semibold text-lg text-primary",
+							className: "font-semibold text-primary",
 							children: benefit.text
 						})]
 					}, idx))
@@ -31218,41 +31403,41 @@ function ControlLoss() {
 							"data-uid": "src/components/sections/ControlLoss.tsx:10:15",
 							"data-prohibitions": "[]",
 							className: "text-3xl md:text-4xl font-bold text-primary mb-4",
-							children: "Mais Controle, Menos Perdas"
+							children: "Mais Controle. Menos Prejuízo."
 						}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 							"data-uid": "src/components/sections/ControlLoss.tsx:13:15",
 							"data-prohibitions": "[]",
 							className: "text-lg text-gray-600",
-							children: "Tenha em mãos as ferramentas essenciais para monitorar, avaliar e otimizar cada viagem da sua frota em tempo real, reduzindo custos operacionais."
+							children: "Tenha em mãos as ferramentas essenciais para monitorar, avaliar e otimizar cada viagem da sua frota em tempo real, reduzindo custos operacionais e identificando comportamentos de risco."
 						})]
 					}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-						"data-uid": "src/components/sections/ControlLoss.tsx:19:13",
+						"data-uid": "src/components/sections/ControlLoss.tsx:20:13",
 						"data-prohibitions": "[]",
-						className: "space-y-8",
+						className: "space-y-6",
 						children: [
 							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-								"data-uid": "src/components/sections/ControlLoss.tsx:20:15",
+								"data-uid": "src/components/sections/ControlLoss.tsx:21:15",
 								"data-prohibitions": "[]",
 								className: "flex gap-4 items-start",
 								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-									"data-uid": "src/components/sections/ControlLoss.tsx:21:17",
+									"data-uid": "src/components/sections/ControlLoss.tsx:22:17",
 									"data-prohibitions": "[]",
 									className: "mt-1 bg-secondary/20 p-3 rounded-xl h-fit",
 									children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Map$1, {
-										"data-uid": "src/components/sections/ControlLoss.tsx:22:19",
+										"data-uid": "src/components/sections/ControlLoss.tsx:23:19",
 										"data-prohibitions": "[editContent]",
 										className: "h-6 w-6 text-primary"
 									})
 								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-									"data-uid": "src/components/sections/ControlLoss.tsx:24:17",
+									"data-uid": "src/components/sections/ControlLoss.tsx:25:17",
 									"data-prohibitions": "[]",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
-										"data-uid": "src/components/sections/ControlLoss.tsx:25:19",
+										"data-uid": "src/components/sections/ControlLoss.tsx:26:19",
 										"data-prohibitions": "[]",
 										className: "text-xl font-bold text-primary mb-2",
 										children: "Rastreamento em Tempo Real"
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-										"data-uid": "src/components/sections/ControlLoss.tsx:28:19",
+										"data-uid": "src/components/sections/ControlLoss.tsx:29:19",
 										"data-prohibitions": "[]",
 										className: "text-gray-600",
 										children: "Acompanhe a localização exata de cada veículo, controle de velocidade e verifique as rotas percorridas com precisão milimétrica."
@@ -31260,28 +31445,28 @@ function ControlLoss() {
 								})]
 							}),
 							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-								"data-uid": "src/components/sections/ControlLoss.tsx:35:15",
+								"data-uid": "src/components/sections/ControlLoss.tsx:36:15",
 								"data-prohibitions": "[]",
 								className: "flex gap-4 items-start",
 								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-									"data-uid": "src/components/sections/ControlLoss.tsx:36:17",
+									"data-uid": "src/components/sections/ControlLoss.tsx:37:17",
 									"data-prohibitions": "[]",
 									className: "mt-1 bg-secondary/20 p-3 rounded-xl h-fit",
 									children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ClipboardList, {
-										"data-uid": "src/components/sections/ControlLoss.tsx:37:19",
+										"data-uid": "src/components/sections/ControlLoss.tsx:38:19",
 										"data-prohibitions": "[editContent]",
 										className: "h-6 w-6 text-primary"
 									})
 								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-									"data-uid": "src/components/sections/ControlLoss.tsx:39:17",
+									"data-uid": "src/components/sections/ControlLoss.tsx:40:17",
 									"data-prohibitions": "[]",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
-										"data-uid": "src/components/sections/ControlLoss.tsx:40:19",
+										"data-uid": "src/components/sections/ControlLoss.tsx:41:19",
 										"data-prohibitions": "[]",
 										className: "text-xl font-bold text-primary mb-2",
 										children: "Controle de Jornada"
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-										"data-uid": "src/components/sections/ControlLoss.tsx:41:19",
+										"data-uid": "src/components/sections/ControlLoss.tsx:42:19",
 										"data-prohibitions": "[]",
 										className: "text-gray-600",
 										children: "Gestão completa das horas trabalhadas, controle de paradas e descansos, garantindo 100% de conformidade com a lei do motorista."
@@ -31289,46 +31474,75 @@ function ControlLoss() {
 								})]
 							}),
 							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-								"data-uid": "src/components/sections/ControlLoss.tsx:48:15",
+								"data-uid": "src/components/sections/ControlLoss.tsx:49:15",
 								"data-prohibitions": "[]",
 								className: "flex gap-4 items-start",
 								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-									"data-uid": "src/components/sections/ControlLoss.tsx:49:17",
+									"data-uid": "src/components/sections/ControlLoss.tsx:50:17",
 									"data-prohibitions": "[]",
 									className: "mt-1 bg-secondary/20 p-3 rounded-xl h-fit",
 									children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ChartColumn, {
-										"data-uid": "src/components/sections/ControlLoss.tsx:50:19",
+										"data-uid": "src/components/sections/ControlLoss.tsx:51:19",
 										"data-prohibitions": "[editContent]",
 										className: "h-6 w-6 text-primary"
 									})
 								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-									"data-uid": "src/components/sections/ControlLoss.tsx:52:17",
+									"data-uid": "src/components/sections/ControlLoss.tsx:53:17",
 									"data-prohibitions": "[]",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
-										"data-uid": "src/components/sections/ControlLoss.tsx:53:19",
+										"data-uid": "src/components/sections/ControlLoss.tsx:54:19",
 										"data-prohibitions": "[]",
 										className: "text-xl font-bold text-primary mb-2",
 										children: "Relatórios Otimizados"
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-										"data-uid": "src/components/sections/ControlLoss.tsx:54:19",
+										"data-uid": "src/components/sections/ControlLoss.tsx:55:19",
 										"data-prohibitions": "[]",
 										className: "text-gray-600",
 										children: "Dados consolidados automaticamente em dashboards intuitivos para tomadas de decisão rápidas e assertivas pela sua equipe."
+									})]
+								})]
+							}),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+								"data-uid": "src/components/sections/ControlLoss.tsx:62:15",
+								"data-prohibitions": "[]",
+								className: "flex gap-4 items-start",
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+									"data-uid": "src/components/sections/ControlLoss.tsx:63:17",
+									"data-prohibitions": "[]",
+									className: "mt-1 bg-secondary/20 p-3 rounded-xl h-fit",
+									children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Video, {
+										"data-uid": "src/components/sections/ControlLoss.tsx:64:19",
+										"data-prohibitions": "[editContent]",
+										className: "h-6 w-6 text-primary"
+									})
+								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+									"data-uid": "src/components/sections/ControlLoss.tsx:66:17",
+									"data-prohibitions": "[]",
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
+										"data-uid": "src/components/sections/ControlLoss.tsx:67:19",
+										"data-prohibitions": "[]",
+										className: "text-xl font-bold text-primary mb-2",
+										children: "Livestream das Cabines"
+									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+										"data-uid": "src/components/sections/ControlLoss.tsx:68:19",
+										"data-prohibitions": "[]",
+										className: "text-gray-600",
+										children: "Visibilidade total da operação com acesso ao vivo às câmeras dos veículos, permitindo intervenções imediatas em situações de risco."
 									})]
 								})]
 							})
 						]
 					})]
 				}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-					"data-uid": "src/components/sections/ControlLoss.tsx:63:11",
+					"data-uid": "src/components/sections/ControlLoss.tsx:77:11",
 					"data-prohibitions": "[]",
 					className: "flex-1 relative",
 					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-						"data-uid": "src/components/sections/ControlLoss.tsx:64:13",
+						"data-uid": "src/components/sections/ControlLoss.tsx:78:13",
 						"data-prohibitions": "[]",
 						className: "absolute inset-0 bg-secondary/10 rounded-2xl transform translate-x-4 translate-y-4 -z-10"
 					}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
-						"data-uid": "src/components/sections/ControlLoss.tsx:65:13",
+						"data-uid": "src/components/sections/ControlLoss.tsx:79:13",
 						"data-prohibitions": "[editContent]",
 						src: "https://img.usecurling.com/p/800/600?q=dashboard%20analytics&color=blue",
 						alt: "Dashboard de Controle",
@@ -31477,82 +31691,82 @@ function Technology() {
 								"data-uid": "src/components/sections/Technology.tsx:21:13",
 								"data-prohibitions": "[]",
 								className: "text-gray-600 leading-relaxed",
-								children: "O Sistema de Monitoramento de Motorista (DMS) detecta sinais de fadiga, distração, uso de celular e cigarro. O sistema emite alertas sonoros na cabine em tempo real para prevenir acidentes antes que aconteçam."
+								children: "Monitoramento avançado que detecta sinais de fadiga, distração e uso de celular. O sistema emite alertas na cabine em tempo real para prevenir acidentes."
 							})
 						]
 					}),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-						"data-uid": "src/components/sections/Technology.tsx:28:11",
+						"data-uid": "src/components/sections/Technology.tsx:27:11",
 						"data-prohibitions": "[]",
 						className: "bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow",
 						children: [
 							/* @__PURE__ */ (0, import_jsx_runtime.jsx)(ShieldAlert, {
-								"data-uid": "src/components/sections/Technology.tsx:29:13",
+								"data-uid": "src/components/sections/Technology.tsx:28:13",
 								"data-prohibitions": "[editContent]",
 								className: "h-12 w-12 text-secondary mb-6",
 								strokeWidth: 1.5
 							}),
 							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
-								"data-uid": "src/components/sections/Technology.tsx:30:13",
+								"data-uid": "src/components/sections/Technology.tsx:29:13",
 								"data-prohibitions": "[]",
 								className: "text-2xl font-bold text-primary mb-4",
 								children: "ADAS (Alertas de Colisão)"
 							}),
 							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-								"data-uid": "src/components/sections/Technology.tsx:31:13",
+								"data-uid": "src/components/sections/Technology.tsx:30:13",
 								"data-prohibitions": "[]",
 								className: "text-gray-600 leading-relaxed",
-								children: "O Sistema Avançado de Assistência ao Condutor emite alertas de colisão frontal, saída involuntária de faixa e proximidade perigosa, atuando como um copiloto virtual implacável para o motorista."
+								children: "O Sistema Avançado de Assistência ao Condutor emite alertas de colisão frontal, saída involuntária de faixa e proximidade perigosa, atuando como um copiloto virtual."
 							})
 						]
 					}),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-						"data-uid": "src/components/sections/Technology.tsx:38:11",
-						"data-prohibitions": "[]",
-						className: "bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow",
-						children: [
-							/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Radio, {
-								"data-uid": "src/components/sections/Technology.tsx:39:13",
-								"data-prohibitions": "[editContent]",
-								className: "h-12 w-12 text-secondary mb-6",
-								strokeWidth: 1.5
-							}),
-							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
-								"data-uid": "src/components/sections/Technology.tsx:40:13",
-								"data-prohibitions": "[]",
-								className: "text-2xl font-bold text-primary mb-4",
-								children: "Livestreaming"
-							}),
-							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-								"data-uid": "src/components/sections/Technology.tsx:41:13",
-								"data-prohibitions": "[]",
-								className: "text-gray-600 leading-relaxed",
-								children: "Tenha acesso às câmeras dos veículos em tempo real, de qualquer lugar. Visualize a estrada e a cabine simultaneamente, garantindo total transparência e agilidade na resolução de qualquer ocorrência."
-							})
-						]
-					}),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-						"data-uid": "src/components/sections/Technology.tsx:48:11",
+						"data-uid": "src/components/sections/Technology.tsx:36:11",
 						"data-prohibitions": "[]",
 						className: "bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow",
 						children: [
 							/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Cpu, {
-								"data-uid": "src/components/sections/Technology.tsx:49:13",
+								"data-uid": "src/components/sections/Technology.tsx:37:13",
 								"data-prohibitions": "[editContent]",
 								className: "h-12 w-12 text-secondary mb-6",
 								strokeWidth: 1.5
 							}),
 							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
-								"data-uid": "src/components/sections/Technology.tsx:50:13",
+								"data-uid": "src/components/sections/Technology.tsx:38:13",
 								"data-prohibitions": "[]",
 								className: "text-2xl font-bold text-primary mb-4",
 								children: "Telemetria Avançada"
 							}),
 							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-								"data-uid": "src/components/sections/Technology.tsx:51:13",
+								"data-uid": "src/components/sections/Technology.tsx:39:13",
 								"data-prohibitions": "[]",
 								className: "text-gray-600 leading-relaxed",
-								children: "Coleta de dados precisos sobre o comportamento de direção: acelerações, frenagens bruscas e curvas acentuadas. Isso permite a criação de um ranking de motoristas, premiando boas práticas."
+								children: "Coleta de dados precisos sobre o comportamento de direção, consumo de combustível e performance do veículo. Crie rankings de motoristas e premie boas práticas."
+							})
+						]
+					}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+						"data-uid": "src/components/sections/Technology.tsx:45:11",
+						"data-prohibitions": "[]",
+						className: "bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow",
+						children: [
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Video, {
+								"data-uid": "src/components/sections/Technology.tsx:46:13",
+								"data-prohibitions": "[editContent]",
+								className: "h-12 w-12 text-secondary mb-6",
+								strokeWidth: 1.5
+							}),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
+								"data-uid": "src/components/sections/Technology.tsx:47:13",
+								"data-prohibitions": "[]",
+								className: "text-2xl font-bold text-primary mb-4",
+								children: "Videomonitoramento"
+							}),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+								"data-uid": "src/components/sections/Technology.tsx:48:13",
+								"data-prohibitions": "[]",
+								className: "text-gray-600 leading-relaxed",
+								children: "Mitigação de acidentes impulsionada por IA. Acompanhe a estrada e a cabine simultaneamente, garantindo total transparência e evidências em vídeo para qualquer ocorrência."
 							})
 						]
 					})
@@ -32000,4 +32214,4 @@ function App() {
 }));
 //#endregion
 
-//# sourceMappingURL=index-s3m72f9R.js.map
+//# sourceMappingURL=index-BXls4nkI.js.map

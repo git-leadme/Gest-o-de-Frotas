@@ -1,4 +1,4 @@
-import { Map, ClipboardList, BarChart3 } from 'lucide-react'
+import { Map, ClipboardList, BarChart3, Video } from 'lucide-react'
 
 export function ControlLoss() {
   return (
@@ -8,15 +8,16 @@ export function ControlLoss() {
           <div className="flex-1 space-y-8">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-                Mais Controle, Menos Perdas
+                Mais Controle. Menos Prejuízo.
               </h2>
               <p className="text-lg text-gray-600">
                 Tenha em mãos as ferramentas essenciais para monitorar, avaliar e otimizar cada
-                viagem da sua frota em tempo real, reduzindo custos operacionais.
+                viagem da sua frota em tempo real, reduzindo custos operacionais e identificando
+                comportamentos de risco.
               </p>
             </div>
 
-            <div className="space-y-8">
+            <div className="space-y-6">
               <div className="flex gap-4 items-start">
                 <div className="mt-1 bg-secondary/20 p-3 rounded-xl h-fit">
                   <Map className="h-6 w-6 text-primary" />
@@ -54,6 +55,19 @@ export function ControlLoss() {
                   <p className="text-gray-600">
                     Dados consolidados automaticamente em dashboards intuitivos para tomadas de
                     decisão rápidas e assertivas pela sua equipe.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex gap-4 items-start">
+                <div className="mt-1 bg-secondary/20 p-3 rounded-xl h-fit">
+                  <Video className="h-6 w-6 text-primary" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-primary mb-2">Livestream das Cabines</h3>
+                  <p className="text-gray-600">
+                    Visibilidade total da operação com acesso ao vivo às câmeras dos veículos,
+                    permitindo intervenções imediatas em situações de risco.
                   </p>
                 </div>
               </div>
