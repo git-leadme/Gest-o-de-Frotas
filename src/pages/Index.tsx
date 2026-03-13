@@ -1,12 +1,23 @@
-/* Home Page - Replace this page layout, components, content, behavior with what you want and translate to the language of the user */
-const Index = () => {
+import { Hero } from '@/components/sections/Hero'
+import { Benefits } from '@/components/sections/Benefits'
+import { ControlLoss } from '@/components/sections/ControlLoss'
+import { Segments } from '@/components/sections/Segments'
+import { Technology } from '@/components/sections/Technology'
+import { ROIResults } from '@/components/sections/ROIResults'
+import { Credibility } from '@/components/sections/Credibility'
+import { FinalCTA } from '@/components/sections/FinalCTA'
+
+export default function Index() {
   return (
-    <div className="container mx-auto py-8 px-4">
-      <h1 className="text-3xl font-bold mb-6">
-        This is a example page ready to be rewritten with your own content
-      </h1>
-    </div>
+    <>
+      <Hero />
+      <Benefits id="beneficios" />
+      <ControlLoss />
+      <Segments id="segmentos" />
+      <Technology id="tecnologia" />
+      <ROIResults id="resultados" />
+      <Credibility />
+      <FinalCTA />
+    </>
   )
 }
-
-export default Index
