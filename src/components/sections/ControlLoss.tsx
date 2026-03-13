@@ -1,57 +1,74 @@
-import { FadeIn } from '@/components/ui/fade-in'
-import { CheckCircle2 } from 'lucide-react'
-
-const features = [
-  'Rastreamento em tempo real com precisão GPS',
-  'Controle de jornada de trabalho do motorista',
-  'Relatórios otimizados e customizáveis',
-  'Livestream da cabine para segurança máxima',
-]
+import { Map, ClipboardList, BarChart3 } from 'lucide-react'
 
 export function ControlLoss() {
   return (
-    <section className="py-24 bg-white overflow-hidden">
-      <div className="container mx-auto px-4 grid lg:grid-cols-2 gap-16 items-center">
-        <FadeIn direction="right" className="order-2 lg:order-1 relative">
-          <div className="absolute inset-0 bg-primary/5 rounded-3xl -rotate-3 transform scale-105"></div>
-          <img
-            src="https://img.usecurling.com/p/800/600?q=dashboard%20software&color=blue"
-            alt="Dashboard de Gestão"
-            className="relative z-10 rounded-2xl shadow-xl border border-slate-100 object-cover w-full h-[400px]"
-          />
-          <div className="absolute -bottom-6 -right-6 bg-white p-4 rounded-xl shadow-lg z-20 border border-slate-100">
-            <div className="flex items-center gap-3">
-              <div className="h-3 w-3 rounded-full bg-secondary animate-pulse"></div>
-              <span className="font-bold text-sm text-primary">Monitoramento Ativo</span>
+    <section className="py-20 bg-white">
+      <div className="container mx-auto px-4">
+        <div className="flex flex-col md:flex-row items-center gap-12 lg:gap-20">
+          <div className="flex-1 space-y-8">
+            <div>
+              <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+                Mais Controle, Menos Perdas
+              </h2>
+              <p className="text-lg text-gray-600">
+                Tenha em mãos as ferramentas essenciais para monitorar, avaliar e otimizar cada
+                viagem da sua frota em tempo real, reduzindo custos operacionais.
+              </p>
+            </div>
+
+            <div className="space-y-8">
+              <div className="flex gap-4 items-start">
+                <div className="mt-1 bg-secondary/20 p-3 rounded-xl h-fit">
+                  <Map className="h-6 w-6 text-primary" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-primary mb-2">
+                    Rastreamento em Tempo Real
+                  </h3>
+                  <p className="text-gray-600">
+                    Acompanhe a localização exata de cada veículo, controle de velocidade e
+                    verifique as rotas percorridas com precisão milimétrica.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex gap-4 items-start">
+                <div className="mt-1 bg-secondary/20 p-3 rounded-xl h-fit">
+                  <ClipboardList className="h-6 w-6 text-primary" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-primary mb-2">Controle de Jornada</h3>
+                  <p className="text-gray-600">
+                    Gestão completa das horas trabalhadas, controle de paradas e descansos,
+                    garantindo 100% de conformidade com a lei do motorista.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex gap-4 items-start">
+                <div className="mt-1 bg-secondary/20 p-3 rounded-xl h-fit">
+                  <BarChart3 className="h-6 w-6 text-primary" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-primary mb-2">Relatórios Otimizados</h3>
+                  <p className="text-gray-600">
+                    Dados consolidados automaticamente em dashboards intuitivos para tomadas de
+                    decisão rápidas e assertivas pela sua equipe.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
-        </FadeIn>
 
-        <FadeIn direction="left" className="order-1 lg:order-2 space-y-8">
-          <div>
-            <span className="text-secondary font-bold tracking-wider uppercase text-sm">
-              A Filosofia CarSystem
-            </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-primary mt-2 mb-6">
-              Mais Controle.
-              <br />
-              Menos Prejuízo.
-            </h2>
-            <p className="text-slate-600 text-lg leading-relaxed">
-              Deixe de reagir a problemas e passe a preveni-los. Nossa plataforma centraliza todas
-              as informações essenciais para que você tome decisões embasadas em dados concretos.
-            </p>
+          <div className="flex-1 relative">
+            <div className="absolute inset-0 bg-secondary/10 rounded-2xl transform translate-x-4 translate-y-4 -z-10"></div>
+            <img
+              src="https://img.usecurling.com/p/800/600?q=dashboard%20analytics&color=blue"
+              alt="Dashboard de Controle"
+              className="rounded-2xl shadow-xl w-full object-cover"
+            />
           </div>
-
-          <ul className="space-y-4">
-            {features.map((feature, idx) => (
-              <li key={idx} className="flex items-start gap-3">
-                <CheckCircle2 className="h-6 w-6 text-secondary shrink-0" />
-                <span className="text-slate-700 font-medium">{feature}</span>
-              </li>
-            ))}
-          </ul>
-        </FadeIn>
+        </div>
       </div>
     </section>
   )

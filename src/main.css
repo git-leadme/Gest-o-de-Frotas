@@ -1,28 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap');
+
 @layer base {
-  html {
-    scroll-behavior: smooth;
-  }
   :root {
     --background: 0 0% 100%;
-    --foreground: 222.2 47% 11%;
+    --foreground: 212 100% 21%;
     --card: 0 0% 100%;
-    --card-foreground: 222.2 47% 11%;
+    --card-foreground: 212 100% 21%;
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 47% 11%;
-    --primary: 212 100% 21%;
-    --primary-foreground: 210 40% 98%;
-    --secondary: 73 100% 44%;
-    --secondary-foreground: 222.2 47% 11%;
+    --popover-foreground: 212 100% 21%;
+    --primary: 212 100% 21%; /* #00316b */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 73 100% 44%; /* #aede00 */
+    --secondary-foreground: 212 100% 21%;
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47% 11%;
+    --accent: 73 100% 44%;
+    --accent-foreground: 212 100% 21%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
     --border: 214.3 31.8% 91.4%;
@@ -32,20 +29,12 @@
   }
 }
 
-@layer utilities {
-  @keyframes pulse-green {
-    0% {
-      box-shadow: 0 0 0 0 rgba(174, 222, 0, 0.7);
-    }
-    70% {
-      box-shadow: 0 0 0 10px rgba(174, 222, 0, 0);
-    }
-    100% {
-      box-shadow: 0 0 0 0 rgba(174, 222, 0, 0);
-    }
+@layer base {
+  * {
+    @apply border-border;
   }
-
-  .animate-pulse-green {
-    animation: pulse-green 2s infinite;
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Intelos', 'Inter', sans-serif;
   }
 }

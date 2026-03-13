@@ -9,15 +9,15 @@ import { FinalCTA } from '@/components/sections/FinalCTA'
 
 export default function Index() {
   return (
-    <>
+    <div className="flex flex-col w-full bg-background min-h-screen">
       <Hero />
-      <Benefits id="beneficios" />
+      <Benefits />
       <ControlLoss />
-      <Segments id="segmentos" />
-      <Technology id="tecnologia" />
-      <ROIResults id="resultados" />
+      <Segments />
+      <Technology />
+      <ROIResults />
       <Credibility />
       <FinalCTA />
-    </>
+    </div>
   )
 }

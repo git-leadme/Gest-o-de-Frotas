@@ -1,83 +1,70 @@
-import { FadeIn } from '@/components/ui/fade-in'
-import { Card, CardContent } from '@/components/ui/card'
-import { TrendingUp, Clock, ShieldAlert, Wrench, Timer } from 'lucide-react'
+import { TrendingUp, Clock, AlertTriangle, Wrench, Timer } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 
 const benefits = [
   {
-    title: 'Aumento de Produtividade',
-    description: 'Acompanhe rotas em tempo real e elimine gargalos na operação.',
     icon: TrendingUp,
+    text: 'Aumento da produtividade da frota.',
   },
   {
-    title: 'Redução de Ociosidade',
-    description: 'Identifique veículos parados com motor ligado e maximize o uso.',
     icon: Clock,
+    text: 'Redução da ociosidade dos veículos.',
   },
   {
-    title: 'Menos Multas e Acidentes',
-    description: 'Alertas de excesso de velocidade e condução perigosa.',
-    icon: ShieldAlert,
+    icon: AlertTriangle,
+    text: 'Redução de custos com multas, acidentes e processos judiciais.',
   },
   {
-    title: 'Economia com Manutenção',
-    description: 'Prevenção de desgastes através da análise de telemetria.',
     icon: Wrench,
+    text: 'Redução de custos com manutenção e combustível.',
   },
   {
-    title: 'Otimização de Tempo',
-    description: 'Relatórios automatizados para tomadas de decisão rápidas.',
     icon: Timer,
+    text: 'Redução dos custos com tempo operacional.',
   },
 ]
 
-export function Benefits({ id }: { id: string }) {
+export function Benefits() {
   const scrollToForm = () => {
-    document.getElementById('hero-form')?.scrollIntoView({ behavior: 'smooth' })
+    document.getElementById('lead-form')?.scrollIntoView({ behavior: 'smooth' })
   }
 
   return (
-    <section id={id} className="py-24 bg-slate-50">
+    <section className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
-        <FadeIn className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-            Soluções que tornam a gestão da sua frota mais eficiente
+            Por que escolher a Gestão Inteligente CarSystem?
           </h2>
-          <p className="text-slate-600 text-lg">
-            Tecnologia desenvolvida para colocar você no controle total da sua operação.
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            Benefícios reais que transformam a operação da sua frota do primeiro ao último
+            quilômetro.
           </p>
-        </FadeIn>
+        </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-          {benefits.map((benefit, index) => (
-            <FadeIn
-              key={index}
-              delay={index * 100}
-              className={index === 4 ? 'md:col-span-2 lg:col-span-1' : ''}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12 justify-center">
+          {benefits.map((benefit, idx) => (
+            <div
+              key={idx}
+              className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col items-center text-center hover:shadow-lg transition-all duration-300"
             >
-              <Card className="h-full hover:shadow-lg transition-shadow border-slate-200">
-                <CardContent className="p-8">
-                  <div className="h-12 w-12 rounded-lg bg-primary/5 flex items-center justify-center mb-6">
-                    <benefit.icon className="h-6 w-6 text-secondary" strokeWidth={2} />
-                  </div>
-                  <h3 className="text-xl font-bold text-slate-800 mb-3">{benefit.title}</h3>
-                  <p className="text-slate-600 leading-relaxed">{benefit.description}</p>
-                </CardContent>
-              </Card>
-            </FadeIn>
+              <div className="h-16 w-16 bg-secondary/10 rounded-full flex items-center justify-center mb-4">
+                <benefit.icon className="h-8 w-8 text-secondary" strokeWidth={1.5} />
+              </div>
+              <p className="font-semibold text-lg text-primary">{benefit.text}</p>
+            </div>
           ))}
         </div>
 
-        <FadeIn delay={400} className="text-center">
+        <div className="text-center">
           <Button
-            onClick={scrollToForm}
-            variant="secondary"
             size="lg"
-            className="font-bold text-base px-8 h-14"
+            onClick={scrollToForm}
+            className="bg-secondary text-secondary-foreground hover:bg-secondary/90 font-bold text-lg px-8 py-6 h-auto"
           >
             Agende sua reunião conosco!
           </Button>
-        </FadeIn>
+        </div>
       </div>
     </section>
   )

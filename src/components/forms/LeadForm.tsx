@@ -5,14 +5,6 @@ import * as z from 'zod'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import {
-  Form,
-  FormControl,
-  FormField,
-  FormItem,
-  FormLabel,
-  FormMessage,
-} from '@/components/ui/form'
-import {
   Select,
   SelectContent,
   SelectItem,
@@ -20,35 +12,45 @@ import {
   SelectValue,
 } from '@/components/ui/select'
 import { useToast } from '@/hooks/use-toast'
-import { formatPhone } from '@/lib/utils'
-import { Loader2 } from 'lucide-react'
+import {
+  Form,
+  FormControl,
+  FormField,
+  FormItem,
+  FormLabel,
+  FormMessage,
+} from '@/components/ui/form'
 
 const formSchema = z.object({
-  name: z.string().min(2, 'Nome é obrigatório'),
-  phone: z.string().min(14, 'Telefone inválido'),
+  fullName: z.string().min(2, 'Nome é obrigatório'),
+  phone: z.string().min(10, 'Telefone inválido (mínimo 10 dígitos)'),
   email: z
     .string()
     .email('E-mail inválido')
-    .refine(
-      (e) => !e.endsWith('@gmail.com') && !e.endsWith('@hotmail.com') && !e.endsWith('@yahoo.com'),
-      'Use um e-mail corporativo',
-    ),
-  company: z.string().min(2, 'Empresa é obrigatória').optional(),
-  fleetSize: z.string().min(1, 'Selecione o tamanho da frota').optional(),
+    .refine((val) => {
+      const blockedDomains = [
+        'gmail.com',
+        'hotmail.com',
+        'yahoo.com',
+        'outlook.com',
+        'bol.com.br',
+        'uol.com.br',
+      ]
+      const domain = val.split('@')[1]
+      return !blockedDomains.includes(domain?.toLowerCase() || '')
+    }, 'Por favor, use um e-mail corporativo'),
+  company: z.string().min(2, 'Nome da empresa é obrigatório'),
+  fleetSize: z.string().min(1, 'Selecione o tamanho da frota'),
 })
 
-interface LeadFormProps {
-  isSimplified?: boolean
-}
-
-export function LeadForm({ isSimplified = false }: LeadFormProps) {
+export function LeadForm() {
   const { toast } = useToast()
   const [isSubmitting, setIsSubmitting] = useState(false)
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
-      name: '',
+      fullName: '',
       phone: '',
       email: '',
       company: '',
@@ -56,17 +58,17 @@ export function LeadForm({ isSimplified = false }: LeadFormProps) {
     },
   })
 
-  const onSubmit = async (values: z.infer<typeof formSchema>) => {
+  function onSubmit(values: z.infer<typeof formSchema>) {
     setIsSubmitting(true)
-    // Simulate API call
-    await new Promise((resolve) => setTimeout(resolve, 1200))
-    setIsSubmitting(false)
-
-    toast({
-      title: 'Sucesso!',
-      description: 'Recebemos seus dados. Um especialista entrará em contato em breve.',
-    })
-    form.reset()
+    // Mock API call
+    setTimeout(() => {
+      setIsSubmitting(false)
+      toast({
+        title: 'Solicitação enviada com sucesso!',
+        description: 'Em breve um de nossos especialistas entrará em contato.',
+      })
+      form.reset()
+    }, 1500)
   }
 
   return (
@@ -74,11 +76,12 @@ export function LeadForm({ isSimplified = false }: LeadFormProps) {
       <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
         <FormField
           control={form.control}
-          name="name"
+          name="fullName"
           render={({ field }) => (
             <FormItem>
+              <FormLabel>Nome Completo</FormLabel>
               <FormControl>
-                <Input placeholder="Nome Completo" className="bg-white" {...field} />
+                <Input placeholder="João da Silva" {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -88,16 +91,12 @@ export function LeadForm({ isSimplified = false }: LeadFormProps) {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <FormField
             control={form.control}
-            name="email"
+            name="phone"
             render={({ field }) => (
               <FormItem>
+                <FormLabel>DDD + Telefone</FormLabel>
                 <FormControl>
-                  <Input
-                    placeholder="E-mail Corporativo"
-                    type="email"
-                    className="bg-white"
-                    {...field}
-                  />
+                  <Input placeholder="(11) 99999-9999" {...field} />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -105,17 +104,12 @@ export function LeadForm({ isSimplified = false }: LeadFormProps) {
           />
           <FormField
             control={form.control}
-            name="phone"
-            render={({ field: { onChange, value, ...field } }) => (
+            name="email"
+            render={({ field }) => (
               <FormItem>
+                <FormLabel>E-mail Corporativo</FormLabel>
                 <FormControl>
-                  <Input
-                    placeholder="Telefone (DDD + Número)"
-                    className="bg-white"
-                    value={value}
-                    onChange={(e) => onChange(formatPhone(e.target.value))}
-                    {...field}
-                  />
+                  <Input placeholder="joao@suaempresa.com.br" {...field} />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -123,58 +117,51 @@ export function LeadForm({ isSimplified = false }: LeadFormProps) {
           />
         </div>
 
-        {!isSimplified && (
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <FormField
-              control={form.control}
-              name="company"
-              render={({ field }) => (
-                <FormItem>
-                  <FormControl>
-                    <Input placeholder="Nome da Empresa" className="bg-white" {...field} />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
-            <FormField
-              control={form.control}
-              name="fleetSize"
-              render={({ field }) => (
-                <FormItem>
-                  <Select onValueChange={field.onChange} defaultValue={field.value}>
-                    <FormControl>
-                      <SelectTrigger className="bg-white">
-                        <SelectValue placeholder="Quantidade de Veículos" />
-                      </SelectTrigger>
-                    </FormControl>
-                    <SelectContent>
-                      <SelectItem value="1-5">1 a 5 veículos</SelectItem>
-                      <SelectItem value="6-20">6 a 20 veículos</SelectItem>
-                      <SelectItem value="21-50">21 a 50 veículos</SelectItem>
-                      <SelectItem value="50+">50+ veículos</SelectItem>
-                    </SelectContent>
-                  </Select>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
-          </div>
-        )}
+        <FormField
+          control={form.control}
+          name="company"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel>Nome da Empresa</FormLabel>
+              <FormControl>
+                <Input placeholder="Sua Empresa LTDA" {...field} />
+              </FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+
+        <FormField
+          control={form.control}
+          name="fleetSize"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel>Quantidade de Veículos</FormLabel>
+              <Select onValueChange={field.onChange} defaultValue={field.value}>
+                <FormControl>
+                  <SelectTrigger>
+                    <SelectValue placeholder="Selecione..." />
+                  </SelectTrigger>
+                </FormControl>
+                <SelectContent>
+                  <SelectItem value="1-10">1 a 10 veículos</SelectItem>
+                  <SelectItem value="11-50">11 a 50 veículos</SelectItem>
+                  <SelectItem value="51-100">51 a 100 veículos</SelectItem>
+                  <SelectItem value="101-500">101 a 500 veículos</SelectItem>
+                  <SelectItem value="500+">Mais de 500 veículos</SelectItem>
+                </SelectContent>
+              </Select>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
 
         <Button
           type="submit"
-          className="w-full h-12 text-base font-bold animate-pulse-green mt-2"
-          variant="secondary"
+          className="w-full bg-primary hover:bg-primary/90 text-white font-bold h-12 text-lg mt-4"
           disabled={isSubmitting}
         >
-          {isSubmitting ? (
-            <>
-              <Loader2 className="mr-2 h-5 w-5 animate-spin" /> Enviando...
-            </>
-          ) : (
-            'Solicitar Contato'
-          )}
+          {isSubmitting ? 'Enviando...' : 'Solicitar Contato'}
         </Button>
       </form>
     </Form>
