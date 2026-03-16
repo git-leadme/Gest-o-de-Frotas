@@ -1,7 +1,7 @@
 import { Outlet } from 'react-router-dom'
 import { Button } from '@/components/ui/button'
 import { Toaster } from '@/components/ui/toaster'
-import { Phone, Mail, MapPin } from 'lucide-react'
+import { MapPin } from 'lucide-react'
 import logoImg from '@/assets/logo-carsystem-afa58.png'
 
 export default function Layout() {
@@ -27,44 +27,30 @@ export default function Layout() {
       </main>
       <footer className="bg-primary text-primary-foreground py-12 border-t border-primary-foreground/10">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-3 gap-8 mb-8">
-            <div className="space-y-4">
+          <div className="grid md:grid-cols-2 gap-8 mb-8">
+            <div className="space-y-6">
               <img
                 src={logoImg}
                 alt="CarSystem"
                 className="h-8 object-contain brightness-0 invert"
               />
-              <p className="text-primary-foreground/80 text-sm max-w-xs">
+              <p className="text-primary-foreground/80 text-sm max-w-sm leading-relaxed">
                 Gestão Inteligente de Frotas com tecnologia de ponta para reduzir custos e aumentar
                 a segurança da sua operação.
               </p>
+              <div className="flex items-center gap-2 text-primary-foreground/80">
+                <MapPin className="h-4 w-4 text-secondary" />
+                <span className="text-sm">Atuação em todo o Brasil</span>
+              </div>
             </div>
 
-            <div>
-              <h4 className="font-bold text-lg mb-4 text-secondary">Contato</h4>
-              <ul className="space-y-3">
-                <li className="flex items-center gap-2 text-primary-foreground/80">
-                  <Phone className="h-4 w-4 text-secondary" />
-                  <span>0800 770 0000</span>
-                </li>
-                <li className="flex items-center gap-2 text-primary-foreground/80">
-                  <Mail className="h-4 w-4 text-secondary" />
-                  <span>comercial@carsystem.com</span>
-                </li>
-                <li className="flex items-center gap-2 text-primary-foreground/80">
-                  <MapPin className="h-4 w-4 text-secondary" />
-                  <span>Atuação em todo o Brasil</span>
-                </li>
-              </ul>
-            </div>
-
-            <div>
+            <div className="md:justify-self-end">
               <h4 className="font-bold text-lg mb-4 text-secondary">Acesso Rápido</h4>
-              <ul className="space-y-2">
+              <ul className="space-y-3">
                 <li>
                   <button
                     onClick={scrollToForm}
-                    className="text-primary-foreground/80 hover:text-secondary transition-colors text-left"
+                    className="text-primary-foreground/80 hover:text-secondary transition-colors text-left text-sm"
                   >
                     Agendar Demonstração
                   </button>
@@ -72,7 +58,7 @@ export default function Layout() {
                 <li>
                   <a
                     href="#"
-                    className="text-primary-foreground/80 hover:text-secondary transition-colors"
+                    className="text-primary-foreground/80 hover:text-secondary transition-colors text-sm"
                   >
                     Política de Privacidade
                   </a>
@@ -80,7 +66,7 @@ export default function Layout() {
                 <li>
                   <a
                     href="#"
-                    className="text-primary-foreground/80 hover:text-secondary transition-colors"
+                    className="text-primary-foreground/80 hover:text-secondary transition-colors text-sm"
                   >
                     Termos de Uso
                   </a>

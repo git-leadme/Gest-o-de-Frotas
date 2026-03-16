@@ -1,6 +1,6 @@
-# Projeto Criado com o Skip
+# Gestão Inteligente de Frotas - CarSystem
 
-Este projeto foi criado de ponta a ponta com o [Skip](https://goskip.dev).
+Este projeto contém a landing page para geração de leads qualificados para o serviço de Gestão Inteligente de Frotas.
 
 ## 🚀 Stack Tecnológica
 
