@@ -35,7 +35,7 @@ export function Credibility() {
             <div className="bg-white p-6 rounded-full shadow-sm border border-gray-100 mb-6">
               <MapPin className="h-10 w-10 text-primary" strokeWidth={1.5} />
             </div>
-            <h3 className="text-2xl font-extrabold text-primary mb-2">Atuação</h3>
+            <h3 className="text-2xl font-extrabold text-primary mb-2">Atuação em todo o Brasil</h3>
             <p className="text-gray-600 text-lg">
               suporte e cobertura em todo o território nacional.
             </p>

@@ -79,7 +79,7 @@ export function LeadForm() {
           name="fullName"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Nome Completo</FormLabel>
+              <FormLabel>Nome Completo *</FormLabel>
               <FormControl>
                 <Input placeholder="João da Silva" {...field} />
               </FormControl>
@@ -94,7 +94,7 @@ export function LeadForm() {
             name="phone"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>DDD + Telefone</FormLabel>
+                <FormLabel>DDD + Telefone *</FormLabel>
                 <FormControl>
                   <Input placeholder="(11) 99999-9999" {...field} />
                 </FormControl>
@@ -107,7 +107,7 @@ export function LeadForm() {
             name="email"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>E-mail Corporativo</FormLabel>
+                <FormLabel>E-mail Corporativo *</FormLabel>
                 <FormControl>
                   <Input placeholder="joao@suaempresa.com.br" {...field} />
                 </FormControl>
@@ -122,7 +122,7 @@ export function LeadForm() {
           name="company"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Nome da Empresa</FormLabel>
+              <FormLabel>Nome da Empresa *</FormLabel>
               <FormControl>
                 <Input placeholder="Sua Empresa LTDA" {...field} />
               </FormControl>
@@ -136,7 +136,7 @@ export function LeadForm() {
           name="fleetSize"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Quantidade de Veículos</FormLabel>
+              <FormLabel>Quantidade de Veículos na Frota *</FormLabel>
               <Select onValueChange={field.onChange} defaultValue={field.value}>
                 <FormControl>
                   <SelectTrigger>
@@ -158,10 +158,10 @@ export function LeadForm() {
 
         <Button
           type="submit"
-          className="w-full bg-primary hover:bg-primary/90 text-white font-bold h-12 text-lg mt-4"
+          className="w-full bg-secondary hover:bg-secondary/90 text-secondary-foreground font-bold h-14 text-lg mt-4 shadow-lg transition-transform hover:-translate-y-0.5"
           disabled={isSubmitting}
         >
-          {isSubmitting ? 'Enviando...' : 'Solicitar Contato'}
+          {isSubmitting ? 'Enviando...' : 'Agendar Demonstração Gratuita'}
         </Button>
       </form>
     </Form>

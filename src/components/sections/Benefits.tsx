@@ -4,23 +4,23 @@ import { Button } from '@/components/ui/button'
 const benefits = [
   {
     icon: TrendingUp,
-    text: 'Aumento da produtividade',
+    text: 'Aumento da produtividade da frota.',
   },
   {
     icon: Clock,
-    text: 'Redução da ociosidade',
+    text: 'Redução da ociosidade dos veículos.',
   },
   {
     icon: AlertTriangle,
-    text: 'Redução de custos com multas e acidentes',
+    text: 'Redução de custos com multas, acidentes e processos judiciais.',
   },
   {
     icon: Wrench,
-    text: 'Redução de manutenção e combustível',
+    text: 'Redução de custos com manutenção e combustível.',
   },
   {
     icon: Wallet,
-    text: 'Redução de custos operacionais',
+    text: 'Redução dos custos com tempo operacional.',
   },
 ]
 
@@ -42,13 +42,13 @@ export function Benefits() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 mb-12 justify-center">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6 mb-12 justify-center">
           {benefits.map((benefit, idx) => (
             <div
               key={idx}
-              className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col items-center text-center hover:shadow-lg transition-all duration-300"
+              className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col items-center text-center hover:shadow-lg transition-all duration-300 group"
             >
-              <div className="h-16 w-16 bg-secondary/10 rounded-full flex items-center justify-center mb-4">
+              <div className="h-16 w-16 bg-secondary/10 rounded-full flex items-center justify-center mb-4 group-hover:bg-secondary/20 transition-colors">
                 <benefit.icon className="h-8 w-8 text-secondary" strokeWidth={1.5} />
               </div>
               <p className="font-semibold text-primary">{benefit.text}</p>
@@ -60,7 +60,7 @@ export function Benefits() {
           <Button
             size="lg"
             onClick={scrollToForm}
-            className="bg-secondary text-secondary-foreground hover:bg-secondary/90 font-bold text-lg px-8 py-6 h-auto"
+            className="bg-secondary text-secondary-foreground hover:bg-secondary/90 font-bold text-lg px-8 py-6 h-auto shadow-lg hover:shadow-xl transition-all hover:-translate-y-1"
           >
             Agende sua reunião conosco!
           </Button>
