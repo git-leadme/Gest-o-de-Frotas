@@ -1,14 +1,11 @@
 import { LeadForm } from '@/components/forms/LeadForm'
+import { images } from '@/images'
 
 export function FinalCTA() {
   return (
     <section className="py-24 bg-primary text-primary-foreground relative overflow-hidden">
       <div className="absolute inset-0 z-0 opacity-10">
-        <img
-          src="https://img.usecurling.com/p/1920/1080?q=handshake%20business&color=blue"
-          alt="Background"
-          className="w-full h-full object-cover"
-        />
+        <img src={images.cta.bg} alt="Background" className="w-full h-full object-cover" />
       </div>
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-5xl mx-auto bg-white rounded-2xl shadow-2xl overflow-hidden text-foreground">
@@ -22,7 +19,7 @@ export function FinalCTA() {
                 apresentar a melhor solução para o seu negócio.
               </p>
               <img
-                src="https://img.usecurling.com/p/600/400?q=office%20meeting&color=blue"
+                src={images.cta.office}
                 alt="Especialistas"
                 className="rounded-xl shadow-md object-cover w-full h-48 lg:h-56"
               />

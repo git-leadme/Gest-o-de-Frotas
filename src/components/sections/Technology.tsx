@@ -1,4 +1,5 @@
 import { Cpu, Eye, Video, ShieldAlert } from 'lucide-react'
+import { images } from '@/images'
 
 const technologies = [
   {
@@ -6,28 +7,28 @@ const technologies = [
     description:
       'Monitoramento avançado que detecta sinais de fadiga, distração e uso de celular. O sistema emite alertas na cabine em tempo real para prevenir acidentes.',
     icon: Eye,
-    image: 'https://img.usecurling.com/p/800/600?q=driver%20truck%20camera&color=blue',
+    image: images.tech.dms,
   },
   {
     title: 'ADAS (Alertas de Colisão)',
     description:
       'O Sistema Avançado de Assistência ao Condutor emite alertas de colisão frontal, saída involuntária de faixa e proximidade perigosa, atuando como um copiloto virtual.',
     icon: ShieldAlert,
-    image: 'https://img.usecurling.com/p/800/600?q=dashboard%20road%20alert&color=blue',
+    image: images.tech.adas,
   },
   {
     title: 'Telemetria Avançada',
     description:
       'Coleta de dados precisos sobre o comportamento de direção, consumo de combustível e performance do veículo. Crie rankings de motoristas e premie boas práticas.',
     icon: Cpu,
-    image: 'https://img.usecurling.com/p/800/600?q=telemetry%20fleet%20data&color=blue',
+    image: images.tech.telemetry,
   },
   {
     title: 'Videomonitoramento',
     description:
       'Mitigação de acidentes impulsionada por IA. Acompanhe a estrada e a cabine simultaneamente, garantindo total transparência e evidências em vídeo.',
     icon: Video,
-    image: 'https://img.usecurling.com/p/800/600?q=livestream%20fleet%20dashboard&color=blue',
+    image: images.tech.video,
   },
 ]
 

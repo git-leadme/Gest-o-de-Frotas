@@ -1,4 +1,5 @@
 import { Map, ClipboardList, BarChart3, Video } from 'lucide-react'
+import { images } from '@/images'
 
 export function ControlLoss() {
   return (
@@ -77,7 +78,7 @@ export function ControlLoss() {
           <div className="flex-1 relative">
             <div className="absolute inset-0 bg-secondary/10 rounded-2xl transform translate-x-4 translate-y-4 -z-10"></div>
             <img
-              src="https://img.usecurling.com/p/800/600?q=dashboard%20analytics&color=blue"
+              src={images.controlDashboard}
               alt="Dashboard de Controle"
               className="rounded-2xl shadow-xl w-full object-cover"
             />

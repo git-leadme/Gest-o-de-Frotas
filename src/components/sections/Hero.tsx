@@ -1,4 +1,5 @@
 import { LeadForm } from '@/components/forms/LeadForm'
+import { images } from '@/images'
 
 export function Hero() {
   return (
@@ -6,11 +7,7 @@ export function Hero() {
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-primary/85 z-10 mix-blend-multiply" />
         <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/90 to-transparent z-10" />
-        <img
-          src="https://img.usecurling.com/p/1920/1080?q=connected%20fleet%20trucks&color=blue"
-          alt="Frota Conectada"
-          className="w-full h-full object-cover"
-        />
+        <img src={images.heroBg} alt="Frota Conectada" className="w-full h-full object-cover" />
         {/* Subtle Tech Overlay Pattern */}
         <div className="absolute inset-0 z-10 opacity-20 bg-[radial-gradient(#aede00_1px,transparent_1px)] [background-size:20px_20px]" />
       </div>

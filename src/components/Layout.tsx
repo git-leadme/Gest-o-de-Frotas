@@ -2,7 +2,7 @@ import { Outlet } from 'react-router-dom'
 import { Button } from '@/components/ui/button'
 import { Toaster } from '@/components/ui/toaster'
 import { MapPin } from 'lucide-react'
-import logoImg from '@/assets/logo-carsystem-afa58.png'
+import { images } from '@/images'
 
 export default function Layout() {
   const scrollToForm = () => {
@@ -13,7 +13,7 @@ export default function Layout() {
     <div className="min-h-screen flex flex-col font-sans">
       <header className="sticky top-0 z-50 w-full border-b bg-white shadow-sm">
         <div className="container mx-auto px-4 h-20 flex items-center justify-between">
-          <img src={logoImg} alt="CarSystem" className="h-8 md:h-10 object-contain" />
+          <img src={images.logo} alt="CarSystem" className="h-8 md:h-10 object-contain" />
           <Button
             onClick={scrollToForm}
             className="bg-secondary text-secondary-foreground hover:bg-secondary/90 font-bold"
@@ -30,7 +30,7 @@ export default function Layout() {
           <div className="grid md:grid-cols-2 gap-8 mb-8">
             <div className="space-y-6">
               <img
-                src={logoImg}
+                src={images.logo}
                 alt="CarSystem"
                 className="h-8 object-contain brightness-0 invert"
               />
