@@ -12,6 +12,7 @@ import {
   SelectValue,
 } from '@/components/ui/select'
 import { useToast } from '@/hooks/use-toast'
+import { createLead } from '@/services/leads'
 import {
   Form,
   FormControl,
@@ -58,17 +59,28 @@ export function LeadForm() {
     },
   })
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
+  async function onSubmit(values: z.infer<typeof formSchema>) {
     setIsSubmitting(true)
-    // Mock API call
-    setTimeout(() => {
-      setIsSubmitting(false)
+    try {
+      await createLead({
+        name: values.fullName,
+        email: values.email,
+        phone: values.phone,
+        company: values.company,
+        fleetSize: values.fleetSize,
+      })
       toast({
-        title: 'Solicitação enviada com sucesso!',
-        description: 'Em breve um de nossos especialistas entrará em contato.',
+        description: 'Formulário enviado com sucesso! Entraremos em contato em breve.',
       })
       form.reset()
-    }, 1500)
+    } catch (error) {
+      toast({
+        variant: 'destructive',
+        description: 'Erro ao enviar o formulário. Por favor, tente novamente.',
+      })
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   return (
