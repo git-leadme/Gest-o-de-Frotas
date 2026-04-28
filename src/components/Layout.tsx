@@ -1,12 +1,26 @@
-import { Outlet, Link } from 'react-router-dom'
+import { Outlet, Link, useNavigate } from 'react-router-dom'
 import { Button } from '@/components/ui/button'
 import { Toaster } from '@/components/ui/toaster'
-import { MapPin } from 'lucide-react'
+import { MapPin, LogOut, LayoutDashboard, LogIn } from 'lucide-react'
 import { images } from '@/images'
+import { useAuth } from '@/hooks/use-auth'
 
 export default function Layout() {
+  const { user, signOut } = useAuth()
+  const navigate = useNavigate()
+
   const scrollToForm = () => {
-    document.getElementById('lead-form')?.scrollIntoView({ behavior: 'smooth' })
+    const form = document.getElementById('lead-form')
+    if (form) {
+      form.scrollIntoView({ behavior: 'smooth' })
+    } else {
+      navigate('/#lead-form')
+    }
+  }
+
+  const handleSignOut = () => {
+    signOut()
+    navigate('/')
   }
 
   return (
@@ -20,12 +34,49 @@ export default function Layout() {
               className="h-10 md:h-12 w-auto object-contain"
             />
           </Link>
-          <Button
-            onClick={scrollToForm}
-            className="bg-secondary text-secondary-foreground hover:bg-secondary/90 font-bold"
-          >
-            Falar com Especialista
-          </Button>
+          <div className="flex items-center gap-2 md:gap-4">
+            {user ? (
+              <>
+                <Link to="/dashboard">
+                  <Button
+                    variant="ghost"
+                    size="sm"
+                    className="gap-2 text-muted-foreground hover:text-foreground"
+                  >
+                    <LayoutDashboard className="h-4 w-4" />
+                    <span className="hidden md:inline">Dashboard</span>
+                  </Button>
+                </Link>
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  onClick={handleSignOut}
+                  className="gap-2 text-muted-foreground hover:text-foreground"
+                >
+                  <LogOut className="h-4 w-4" />
+                  <span className="hidden md:inline">Sair</span>
+                </Button>
+              </>
+            ) : (
+              <Link to="/login">
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  className="text-muted-foreground hover:text-foreground"
+                  title="Acesso Restrito"
+                >
+                  <LogIn className="h-4 w-4" />
+                  <span className="sr-only">Login</span>
+                </Button>
+              </Link>
+            )}
+            <Button
+              onClick={scrollToForm}
+              className="bg-secondary text-secondary-foreground hover:bg-secondary/90 font-bold"
+            >
+              Falar com Especialista
+            </Button>
+          </div>
         </div>
       </header>
       <main className="flex-1">
