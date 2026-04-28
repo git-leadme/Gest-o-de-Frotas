@@ -1,6 +1,8 @@
 import { Hero } from '@/components/sections/Hero'
 import { AuthorityBar } from '@/components/sections/AuthorityBar'
 import { InvisibleCosts } from '@/components/sections/InvisibleCosts'
+import { WhyChooseUs } from '@/components/sections/WhyChooseUs'
+import { TailoredSolutions } from '@/components/sections/TailoredSolutions'
 import { BirdsPyramid } from '@/components/sections/BirdsPyramid'
 import { ProductVisuals } from '@/components/sections/ProductVisuals'
 import { ROISimulator } from '@/components/sections/ROISimulator'
@@ -17,6 +19,8 @@ export default function Index() {
       <Hero />
       <AuthorityBar />
       <InvisibleCosts />
+      <WhyChooseUs />
+      <TailoredSolutions />
       <BirdsPyramid />
       <ProductVisuals />
       <ROISimulator />
