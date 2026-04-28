@@ -27,11 +27,11 @@ export default function Layout() {
     <div className="min-h-screen flex flex-col font-sans">
       <header className="sticky top-0 z-50 w-full border-b bg-white shadow-sm">
         <div className="container mx-auto px-4 h-20 flex items-center justify-between">
-          <Link to="/" className="flex-shrink-0 transition-opacity hover:opacity-90">
+          <Link to="/" className="flex-shrink-0 transition-opacity hover:opacity-90 block">
             <img
               src={images.logo}
               alt="Carsystem Frotas"
-              className="h-10 md:h-12 w-auto object-contain"
+              className="block h-10 md:h-12 w-auto max-w-none object-contain"
             />
           </Link>
           <div className="flex items-center gap-2 md:gap-4">
@@ -93,7 +93,7 @@ export default function Layout() {
                 <img
                   src={images.logo}
                   alt="Carsystem Frotas"
-                  className="h-8 md:h-10 w-auto object-contain"
+                  className="block h-8 md:h-10 w-auto max-w-none object-contain"
                 />
               </Link>
               <p className="text-primary-foreground/80 text-sm max-w-sm leading-relaxed">
