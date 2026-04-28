@@ -4,6 +4,15 @@ export const images = {
   logo: logoSvg,
   heroBg: 'https://img.usecurling.com/p/1920/1080?q=connected%20fleet%20trucks&color=blue',
   controlDashboard: 'https://img.usecurling.com/p/800/600?q=dashboard%20analytics&color=blue',
+  tabletMockup: 'https://img.usecurling.com/p/1024/768?q=tablet%20dashboard%20map&color=blue',
+  videoThumb: 'https://img.usecurling.com/p/1280/720?q=truck%20fleet%20driving&color=blue',
+  logos: [
+    'https://img.usecurling.com/i?q=company%20logo&color=solid-black&shape=outline',
+    'https://img.usecurling.com/i?q=logistics%20logo&color=solid-black&shape=outline',
+    'https://img.usecurling.com/i?q=transport%20logo&color=solid-black&shape=outline',
+    'https://img.usecurling.com/i?q=fleet%20logo&color=solid-black&shape=outline',
+    'https://img.usecurling.com/i?q=enterprise%20logo&color=solid-black&shape=outline',
+  ],
   tech: {
     dms: 'https://img.usecurling.com/p/800/600?q=driver%20truck%20camera&color=blue',
     adas: 'https://img.usecurling.com/p/800/600?q=dashboard%20road%20alert&color=blue',

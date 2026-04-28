@@ -23,12 +23,11 @@ export function Hero() {
               Tecnologia de Ponta
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-[1.15] tracking-tight">
-              Gestão Inteligente da Sua Frota: Reduza Custos, Aumente a Produtividade e Garanta a
-              Segurança com a CarSystem.
+              Pare de Perder Lucro para a Ineficiência da sua Frota.
             </h1>
             <p className="text-lg md:text-xl text-primary-foreground/90 font-light leading-relaxed">
-              Tecnologia avançada com IA, Telemetria e Videomonitoramento para você ter o controle
-              total da sua operação e focar no que realmente importa: resultados.
+              Recupere até 25% do seu gasto com combustível e reduza multas em 51% com a tecnologia
+              que se paga em menos de 6 meses.
             </p>
           </div>
           <div

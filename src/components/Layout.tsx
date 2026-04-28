@@ -1,7 +1,7 @@
 import { Outlet, Link, useNavigate } from 'react-router-dom'
 import { Button } from '@/components/ui/button'
 import { Toaster } from '@/components/ui/toaster'
-import { MapPin, LogOut, LayoutDashboard, LogIn, Phone, Mail } from 'lucide-react'
+import { MapPin, LogOut, LayoutDashboard, LogIn, Phone, Mail, MessageCircle } from 'lucide-react'
 import { images } from '@/images'
 import { useAuth } from '@/hooks/use-auth'
 
@@ -173,6 +173,15 @@ export default function Layout() {
         </div>
       </footer>
       <Toaster />
+      <a
+        href="https://wa.me/5511981270408"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:bg-[#20bd5a] transition-transform hover:-translate-y-1 flex items-center justify-center"
+        aria-label="Fale conosco no WhatsApp"
+      >
+        <MessageCircle className="h-8 w-8" />
+      </a>
     </div>
   )
 }
