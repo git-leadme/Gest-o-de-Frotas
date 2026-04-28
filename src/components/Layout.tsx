@@ -1,7 +1,7 @@
 import { Outlet, Link, useNavigate } from 'react-router-dom'
 import { Button } from '@/components/ui/button'
 import { Toaster } from '@/components/ui/toaster'
-import { MapPin, LogOut, LayoutDashboard, LogIn } from 'lucide-react'
+import { MapPin, LogOut, LayoutDashboard, LogIn, Phone, Mail } from 'lucide-react'
 import { images } from '@/images'
 import { useAuth } from '@/hooks/use-auth'
 
@@ -84,13 +84,16 @@ export default function Layout() {
       </main>
       <footer className="bg-primary text-primary-foreground py-12 border-t border-primary-foreground/10">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-8 mb-8">
+          <div className="grid md:grid-cols-3 gap-8 mb-8">
             <div className="space-y-6">
-              <Link to="/" className="inline-block transition-opacity hover:opacity-90">
+              <Link
+                to="/"
+                className="inline-block transition-opacity hover:opacity-90 bg-white p-2 rounded-md"
+              >
                 <img
                   src={images.logo}
                   alt="Carsystem Frotas"
-                  className="h-8 md:h-10 w-auto object-contain brightness-0 invert"
+                  className="h-8 md:h-10 w-auto object-contain"
                 />
               </Link>
               <p className="text-primary-foreground/80 text-sm max-w-sm leading-relaxed">
@@ -98,9 +101,35 @@ export default function Layout() {
                 a segurança da sua operação.
               </p>
               <div className="flex items-center gap-2 text-primary-foreground/80">
-                <MapPin className="h-4 w-4 text-secondary" />
+                <MapPin className="h-4 w-4 text-secondary shrink-0" />
                 <span className="text-sm">Atuação em todo o Brasil</span>
               </div>
+            </div>
+
+            <div>
+              <h4 className="font-bold text-lg mb-4 text-secondary">Contato</h4>
+              <ul className="space-y-3">
+                <li>
+                  <a
+                    href="https://wa.me/5511981270408"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-primary-foreground/80 hover:text-secondary transition-colors text-sm"
+                  >
+                    <Phone className="h-4 w-4 shrink-0" />
+                    <span>(11) 98127-0408</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="mailto:Frotas@carsystem.com"
+                    className="flex items-center gap-2 text-primary-foreground/80 hover:text-secondary transition-colors text-sm"
+                  >
+                    <Mail className="h-4 w-4 shrink-0" />
+                    <span>Frotas@carsystem.com</span>
+                  </a>
+                </li>
+              </ul>
             </div>
 
             <div className="md:justify-self-end">
@@ -134,8 +163,12 @@ export default function Layout() {
             </div>
           </div>
 
-          <div className="pt-8 border-t border-primary-foreground/10 text-center text-sm text-primary-foreground/60">
-            <p>&copy; {new Date().getFullYear()} CarSystem. Todos os direitos reservados.</p>
+          <div className="pt-8 border-t border-primary-foreground/10 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-primary-foreground/60">
+            <p>
+              &copy; {new Date().getFullYear()} CAR SYSTEM ALARMES LTDA (Carsystem). Todos os
+              direitos reservados.
+            </p>
+            <p>CNPJ: 04.401.579/0001-55</p>
           </div>
         </div>
       </footer>
