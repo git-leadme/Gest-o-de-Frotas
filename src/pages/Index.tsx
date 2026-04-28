@@ -9,7 +9,7 @@ import { ROISimulator } from '@/components/sections/ROISimulator'
 import { ROIResults } from '@/components/sections/ROIResults'
 import { SlaSupport } from '@/components/sections/SlaSupport'
 import { InstitutionalVideo } from '@/components/sections/InstitutionalVideo'
-import { Technology } from '@/components/sections/Technology'
+import { AdvancedFeatures } from '@/components/sections/AdvancedFeatures'
 import { Credibility } from '@/components/sections/Credibility'
 import { FinalCTA } from '@/components/sections/FinalCTA'
 
@@ -27,7 +27,7 @@ export default function Index() {
       <ROIResults />
       <SlaSupport />
       <InstitutionalVideo />
-      <Technology />
+      <AdvancedFeatures />
       <Credibility />
       <FinalCTA />
     </div>
