@@ -1,4 +1,5 @@
 import { LeadForm } from '@/components/forms/LeadForm'
+import { Award } from 'lucide-react'
 import { images } from '@/images'
 
 export function Hero() {
@@ -15,19 +16,27 @@ export function Hero() {
       <div className="container mx-auto px-4 relative z-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6 animate-fade-in-up max-w-2xl">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary/20 text-secondary border border-secondary/30 text-sm font-semibold mb-2">
-              <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-secondary"></span>
-              </span>
-              Tecnologia de Ponta
+            <div className="flex flex-wrap items-center gap-3 mb-2">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary/20 text-secondary border border-secondary/30 text-sm font-semibold">
+                <span className="relative flex h-2 w-2">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-secondary"></span>
+                </span>
+                Gestão Inteligente de Frotas
+              </div>
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 text-white border border-white/20 text-sm font-medium">
+                <Award className="h-4 w-4 text-secondary" />
+                Pioneira em Tecnologia e Inovação
+              </div>
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-[1.15] tracking-tight">
-              Pare de Perder Lucro para a Ineficiência da sua Frota.
+              Mais controle.
+              <br />
+              Menos prejuízo.
             </h1>
             <p className="text-lg md:text-xl text-primary-foreground/90 font-light leading-relaxed">
-              Recupere até 25% do seu gasto com combustível e reduza multas em 51% com a tecnologia
-              que se paga em menos de 6 meses.
+              A solução definitiva em gestão de frotas pesadas. Reduza custos com combustível e
+              manutenção, evite acidentes e aumente o controle total da sua operação.
             </p>
           </div>
           <div

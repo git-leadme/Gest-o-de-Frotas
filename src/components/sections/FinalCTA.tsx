@@ -1,5 +1,6 @@
 import { LeadForm } from '@/components/forms/LeadForm'
 import { images } from '@/images'
+import { Award } from 'lucide-react'
 
 export function FinalCTA() {
   return (
@@ -11,13 +12,17 @@ export function FinalCTA() {
         <div className="max-w-5xl mx-auto bg-white rounded-2xl shadow-2xl overflow-hidden text-foreground">
           <div className="grid md:grid-cols-2">
             <div className="p-10 lg:p-12 flex flex-col justify-center bg-gray-50 border-r border-gray-100">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary border border-primary/20 text-sm font-bold mb-6 w-fit">
+                <Award className="h-5 w-5 text-secondary" />
+                Pioneira em Tecnologia e Inovação
+              </div>
               <h2 className="text-3xl lg:text-4xl font-bold text-primary mb-6 leading-tight">
                 Pronto para transformar a gestão da sua frota?
               </h2>
               <p className="text-gray-600 mb-8 text-lg">
                 Preencha o formulário e um de nossos especialistas entrará em contato para
-                apresentar a melhor solução para o seu negócio.
-              </p>
+                apresentar a melhor solução focada em frotas pesadas para o seu negócio.
+              </p>{' '}
               <img
                 src={images.cta.office}
                 alt="Especialistas"

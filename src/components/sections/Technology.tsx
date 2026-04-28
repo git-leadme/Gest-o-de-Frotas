@@ -1,7 +1,16 @@
 import { Cpu, Eye, Video, ShieldAlert } from 'lucide-react'
 import { images } from '@/images'
+import { cn } from '@/lib/utils'
 
 const technologies = [
+  {
+    title: 'Live Stream das Cabines',
+    description:
+      'Videomonitoramento em tempo real. Acompanhe a estrada e a cabine simultaneamente, garantindo total transparência e evidências em vídeo das suas frotas pesadas.',
+    icon: Video,
+    image: images.tech.video,
+    highlight: true,
+  },
   {
     title: 'Câmeras com IA (DMS)',
     description:
@@ -10,31 +19,24 @@ const technologies = [
     image: images.tech.dms,
   },
   {
-    title: 'ADAS (Alertas de Colisão)',
+    title: 'Telemetria para Pesados',
     description:
-      'O Sistema Avançado de Assistência ao Condutor emite alertas de colisão frontal, saída involuntária de faixa e proximidade perigosa, atuando como um copiloto virtual.',
-    icon: ShieldAlert,
-    image: images.tech.adas,
-  },
-  {
-    title: 'Telemetria Avançada',
-    description:
-      'Coleta de dados precisos sobre o comportamento de direção, consumo de combustível e performance do veículo. Crie rankings de motoristas e premie boas práticas.',
+      'Coleta de dados precisos sobre o comportamento de direção, RPM, consumo de combustível e performance de caminhões e maquinário pesado.',
     icon: Cpu,
     image: images.tech.telemetry,
   },
   {
-    title: 'Videomonitoramento',
+    title: 'ADAS (Alertas de Colisão)',
     description:
-      'Mitigação de acidentes impulsionada por IA. Acompanhe a estrada e a cabine simultaneamente, garantindo total transparência e evidências em vídeo.',
-    icon: Video,
-    image: images.tech.video,
+      'O Sistema Avançado de Assistência ao Condutor emite alertas de colisão frontal, saída involuntária de faixa e proximidade perigosa.',
+    icon: ShieldAlert,
+    image: images.tech.adas,
   },
 ]
 
 export function Technology() {
   return (
-    <section className="py-24 bg-gray-50">
+    <section className="py-24 bg-gray-50 overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
@@ -50,13 +52,51 @@ export function Technology() {
           {technologies.map((tech, idx) => (
             <div
               key={idx}
-              className="bg-white rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow overflow-hidden flex flex-col"
+              className={cn(
+                'bg-white rounded-2xl shadow-sm border transition-all overflow-hidden flex flex-col group',
+                tech.highlight
+                  ? 'border-secondary/50 shadow-lg md:col-span-2 lg:flex-row relative'
+                  : 'border-gray-100 hover:shadow-md',
+              )}
             >
-              <img src={tech.image} alt={tech.title} className="w-full h-56 object-cover" />
-              <div className="p-8 flex-1 flex flex-col">
-                <tech.icon className="h-10 w-10 text-secondary mb-4" strokeWidth={1.5} />
-                <h3 className="text-2xl font-bold text-primary mb-3">{tech.title}</h3>
-                <p className="text-gray-600 leading-relaxed">{tech.description}</p>
+              {tech.highlight && (
+                <div className="absolute top-4 right-4 z-10 bg-red-500 text-white text-xs font-bold px-3 py-1 rounded-full flex items-center gap-2 animate-pulse">
+                  <span className="h-2 w-2 rounded-full bg-white"></span>
+                  LIVE
+                </div>
+              )}
+              <img
+                src={tech.image}
+                alt={tech.title}
+                className={cn(
+                  'object-cover transition-transform duration-700 group-hover:scale-105',
+                  tech.highlight ? 'w-full lg:w-1/2 h-64 lg:h-auto' : 'w-full h-56',
+                )}
+              />
+              <div
+                className={cn(
+                  'p-8 flex-1 flex flex-col justify-center',
+                  tech.highlight && 'lg:p-12',
+                )}
+              >
+                <tech.icon
+                  className={cn(
+                    'h-10 w-10 text-secondary mb-4',
+                    tech.highlight && 'h-12 w-12 mb-6',
+                  )}
+                  strokeWidth={1.25}
+                />
+                <h3
+                  className={cn(
+                    'font-bold text-primary mb-3',
+                    tech.highlight ? 'text-3xl' : 'text-2xl',
+                  )}
+                >
+                  {tech.title}
+                </h3>
+                <p className={cn('text-gray-600 leading-relaxed', tech.highlight && 'text-lg')}>
+                  {tech.description}
+                </p>
               </div>
             </div>
           ))}

@@ -1,5 +1,5 @@
 import { images } from '@/images'
-import { BarChart3, Map, ShieldCheck } from 'lucide-react'
+import { MapPin, Clock, FileBarChart } from 'lucide-react'
 
 export function ProductVisuals() {
   return (
@@ -18,35 +18,36 @@ export function ProductVisuals() {
             <ul className="space-y-6">
               <li className="flex items-start gap-4">
                 <div className="bg-primary/5 p-3 rounded-lg text-primary mt-1">
-                  <Map className="h-6 w-6" />
+                  <MapPin className="h-7 w-7" strokeWidth={1.25} />
                 </div>
                 <div>
-                  <h4 className="font-bold text-xl text-primary">Visão de Mapa em Tempo Real</h4>
+                  <h4 className="font-bold text-xl text-primary">Rastreamento</h4>
                   <p className="text-gray-600">
-                    Monitore rotas, paradas e status de cada veículo simultaneamente.
+                    Monitore rotas, paradas e status de cada veículo pesado simultaneamente.
                   </p>
                 </div>
               </li>
               <li className="flex items-start gap-4">
                 <div className="bg-primary/5 p-3 rounded-lg text-primary mt-1">
-                  <BarChart3 className="h-6 w-6" />
+                  <Clock className="h-7 w-7" strokeWidth={1.25} />
                 </div>
                 <div>
-                  <h4 className="font-bold text-xl text-primary">Dashboards de ROI</h4>
+                  <h4 className="font-bold text-xl text-primary">Gestão de Jornada</h4>
                   <p className="text-gray-600">
-                    Acompanhe a evolução da sua economia e redução de custos mensalmente.
+                    Controle de horas trabalhadas, pausas para descanso e conformidade com a lei do
+                    motorista.
                   </p>
                 </div>
               </li>
               <li className="flex items-start gap-4">
                 <div className="bg-primary/5 p-3 rounded-lg text-primary mt-1">
-                  <ShieldCheck className="h-6 w-6" />
+                  <FileBarChart className="h-7 w-7" strokeWidth={1.25} />
                 </div>
                 <div>
-                  <h4 className="font-bold text-xl text-primary">Alertas Operacionais</h4>
+                  <h4 className="font-bold text-xl text-primary">Relatórios</h4>
                   <p className="text-gray-600">
-                    Seja notificado na hora sobre qualquer desvio de padrão ou comportamento de
-                    risco.
+                    Acompanhe a evolução da sua operação e extraia dados precisos para tomada de
+                    decisão.
                   </p>
                 </div>
               </li>
