@@ -1,4 +1,4 @@
-import { Outlet } from 'react-router-dom'
+import { Outlet, Link } from 'react-router-dom'
 import { Button } from '@/components/ui/button'
 import { Toaster } from '@/components/ui/toaster'
 import { MapPin } from 'lucide-react'
@@ -13,7 +13,13 @@ export default function Layout() {
     <div className="min-h-screen flex flex-col font-sans">
       <header className="sticky top-0 z-50 w-full border-b bg-white shadow-sm">
         <div className="container mx-auto px-4 h-20 flex items-center justify-between">
-          <img src={images.logo} alt="CarSystem" className="h-8 md:h-10 object-contain" />
+          <Link to="/" className="flex-shrink-0 transition-opacity hover:opacity-90">
+            <img
+              src={images.logo}
+              alt="Carsystem Frotas"
+              className="h-10 md:h-12 w-auto object-contain"
+            />
+          </Link>
           <Button
             onClick={scrollToForm}
             className="bg-secondary text-secondary-foreground hover:bg-secondary/90 font-bold"
@@ -29,11 +35,13 @@ export default function Layout() {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-8 mb-8">
             <div className="space-y-6">
-              <img
-                src={images.logo}
-                alt="CarSystem"
-                className="h-8 object-contain brightness-0 invert"
-              />
+              <Link to="/" className="inline-block transition-opacity hover:opacity-90">
+                <img
+                  src={images.logo}
+                  alt="Carsystem Frotas"
+                  className="h-8 md:h-10 w-auto object-contain brightness-0 invert"
+                />
+              </Link>
               <p className="text-primary-foreground/80 text-sm max-w-sm leading-relaxed">
                 Gestão Inteligente de Frotas com tecnologia de ponta para reduzir custos e aumentar
                 a segurança da sua operação.
