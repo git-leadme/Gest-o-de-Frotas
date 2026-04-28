@@ -1,7 +1,9 @@
 import { Hero } from '@/components/sections/Hero'
 import { AuthorityBar } from '@/components/sections/AuthorityBar'
 import { InvisibleCosts } from '@/components/sections/InvisibleCosts'
+import { BirdsPyramid } from '@/components/sections/BirdsPyramid'
 import { ProductVisuals } from '@/components/sections/ProductVisuals'
+import { ROISimulator } from '@/components/sections/ROISimulator'
 import { ROIResults } from '@/components/sections/ROIResults'
 import { SlaSupport } from '@/components/sections/SlaSupport'
 import { InstitutionalVideo } from '@/components/sections/InstitutionalVideo'
@@ -15,7 +17,9 @@ export default function Index() {
       <Hero />
       <AuthorityBar />
       <InvisibleCosts />
+      <BirdsPyramid />
       <ProductVisuals />
+      <ROISimulator />
       <ROIResults />
       <SlaSupport />
       <InstitutionalVideo />
