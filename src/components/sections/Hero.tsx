@@ -35,8 +35,8 @@ export function Hero() {
               Menos prejuízo.
             </h1>
             <p className="text-lg md:text-xl text-primary-foreground/90 font-light leading-relaxed">
-              A solução definitiva em gestão de frotas pesadas. Reduza custos com combustível e
-              manutenção, evite acidentes e aumente o controle total da sua operação.
+              A solução definitiva em gestão de frotas. Reduza custos com combustível e manutenção,
+              evite acidentes e aumente o controle total da sua operação.
             </p>
           </div>
           <div
