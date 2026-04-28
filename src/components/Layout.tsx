@@ -35,7 +35,7 @@ export default function Layout() {
               src={images.logo}
               alt="Carsystem Frotas"
               style={{ aspectRatio: '500/120' }}
-              className="block h-10 md:h-12 w-auto object-contain"
+              className="block h-10 md:h-12 w-auto object-contain pl-[0px] pb-[15px] mr-[0px] shadow-[0px_7px_6px_0px_#808080]"
             />
           </Link>
           <div className="flex items-center gap-2 md:gap-4">
