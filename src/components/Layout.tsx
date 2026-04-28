@@ -26,12 +26,16 @@ export default function Layout() {
   return (
     <div className="min-h-screen flex flex-col font-sans">
       <header className="sticky top-0 z-50 w-full border-b bg-white shadow-sm">
-        <div className="container mx-auto px-4 h-20 flex items-center justify-between">
-          <Link to="/" className="flex-shrink-0 transition-opacity hover:opacity-90 block">
+        <div className="container max-w-7xl mx-auto px-4 md:px-6 lg:px-8 h-20 flex items-center justify-between">
+          <Link
+            to="/"
+            className="flex-shrink-0 transition-opacity hover:opacity-90 flex items-center py-2"
+          >
             <img
               src={images.logo}
               alt="Carsystem Frotas"
-              className="block h-10 md:h-12 w-auto max-w-none object-contain"
+              style={{ aspectRatio: '500/120' }}
+              className="block h-10 md:h-12 w-auto object-contain"
             />
           </Link>
           <div className="flex items-center gap-2 md:gap-4">
