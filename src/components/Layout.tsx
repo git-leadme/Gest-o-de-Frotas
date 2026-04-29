@@ -29,12 +29,12 @@ export default function Layout() {
         <div className="container max-w-7xl mx-auto px-4 md:px-6 lg:px-8 min-h-[5rem] py-3 flex items-center justify-between">
           <Link
             to="/"
-            className="flex-shrink-0 transition-opacity hover:opacity-90 flex items-center justify-center p-2 sm:p-3"
+            className="flex-shrink-0 transition-opacity hover:opacity-90 block w-[140px] sm:w-[160px] md:w-[200px] py-2 mr-2"
           >
             <img
               src={images.logo}
               alt="Carsystem Frotas"
-              className="block w-full max-w-[160px] md:max-w-[200px] h-auto max-h-[60px] md:max-h-[80px] object-contain"
+              className="w-full h-auto object-contain"
             />
           </Link>
           <div className="flex items-center gap-2 md:gap-4">
@@ -91,12 +91,12 @@ export default function Layout() {
             <div className="space-y-6 flex flex-col">
               <Link
                 to="/"
-                className="inline-flex items-center justify-center transition-opacity hover:opacity-90 bg-white p-4 sm:p-6 rounded-lg shadow-sm self-start"
+                className="inline-block transition-opacity hover:opacity-90 bg-white p-4 sm:p-6 rounded-lg shadow-sm self-start w-[180px] md:w-[240px]"
               >
                 <img
                   src={images.logo}
                   alt="Carsystem Frotas"
-                  className="block w-full max-w-[180px] md:max-w-[240px] h-auto max-h-[80px] md:max-h-[100px] object-contain"
+                  className="w-full h-auto object-contain"
                 />
               </Link>
               <p className="text-white text-base max-w-md leading-relaxed">

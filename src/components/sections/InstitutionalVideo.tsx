@@ -12,10 +12,10 @@ export function InstitutionalVideo() {
           </p>
         </div>
 
-        <div className="max-w-5xl mx-auto relative rounded-2xl overflow-hidden shadow-2xl border border-gray-100 aspect-video bg-black">
+        <div className="w-full max-w-5xl mx-auto relative rounded-2xl overflow-hidden shadow-2xl border border-gray-100 aspect-video bg-black">
           <iframe
             className="absolute top-0 left-0 w-full h-full"
-            src="https://www.youtube.com/embed/Qica1I6s-bA?rel=0"
+            src="https://www.youtube.com/embed/Qica1I6s-bA"
             title="Vídeo Institucional Carsystem"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
