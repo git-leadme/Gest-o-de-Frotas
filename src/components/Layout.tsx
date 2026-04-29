@@ -2,7 +2,6 @@ import { Outlet, Link, useNavigate } from 'react-router-dom'
 import { Button } from '@/components/ui/button'
 import { Toaster } from '@/components/ui/toaster'
 import { MapPin, LogOut, LayoutDashboard, LogIn, Phone, Mail, MessageCircle } from 'lucide-react'
-import { images } from '@/images'
 import { useAuth } from '@/hooks/use-auth'
 
 export default function Layout() {
@@ -27,18 +26,20 @@ export default function Layout() {
     <div className="min-h-screen flex flex-col font-sans">
       <header className="sticky top-0 z-50 w-full border-b bg-white shadow-sm">
         <div className="container max-w-7xl mx-auto px-4 md:px-6 lg:px-8 min-h-[5rem] py-3 flex items-center justify-between">
-          <Link
-            to="/"
-            className="flex-shrink-0 transition-opacity hover:opacity-90 block p-2 w-[140px] sm:w-[160px] md:w-[200px]"
-          >
-            <img
-              src={images.logo}
-              alt="Carsystem Frotas"
-              className="w-full h-auto max-h-[3.5rem] object-contain"
-              width="200"
-              height="56"
-            />
-          </Link>
+          <div className="flex items-center gap-4 md:gap-6 lg:gap-8">
+            <Link to="/" className="flex-shrink-0 transition-opacity hover:opacity-90 block py-2">
+              <img
+                src="/logo.png"
+                alt="Carsystem Frotas"
+                className="h-8 md:h-10 w-auto object-contain"
+              />
+            </Link>
+            <div className="hidden lg:flex items-center border-l-2 border-gray-100 pl-6 h-10">
+              <span className="text-sm font-semibold text-slate-600 whitespace-nowrap tracking-tight">
+                +20 mil veículos monitorados
+              </span>
+            </div>
+          </div>
           <div className="flex items-center gap-2 md:gap-4">
             {user ? (
               <>
@@ -94,14 +95,12 @@ export default function Layout() {
             <div className="space-y-6 flex flex-col">
               <Link
                 to="/"
-                className="inline-block transition-opacity hover:opacity-90 bg-white p-4 sm:p-6 rounded-xl shadow-sm self-start w-[200px] md:w-[260px]"
+                className="inline-block transition-opacity hover:opacity-90 bg-white p-4 sm:p-6 rounded-xl shadow-sm self-start"
               >
                 <img
-                  src={images.logo}
+                  src="/logo.png"
                   alt="Carsystem Frotas"
-                  className="w-full h-auto max-h-[4.5rem] object-contain"
-                  width="260"
-                  height="72"
+                  className="h-10 w-auto object-contain"
                 />
               </Link>
               <p className="text-white text-base max-w-md leading-relaxed">

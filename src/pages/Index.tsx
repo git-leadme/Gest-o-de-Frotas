@@ -23,18 +23,9 @@ export default function Index() {
   return (
     <div className="flex flex-col w-full bg-background min-h-screen">
       <Hero />
-      <AuthorityBar />
-      <InvisibleCosts />
-      <WhyChooseUs />
-      <TailoredSolutions />
-      <BirdsPyramid />
-      <ProductVisuals />
-      <ROISimulator />
-      <ROIResults />
-      <SlaSupport />
       <Suspense
         fallback={
-          <div className="w-full py-24 flex items-center justify-center bg-white min-h-[400px]">
+          <div className="w-full py-12 flex items-center justify-center bg-white min-h-[300px]">
             <div className="animate-pulse flex flex-col items-center gap-4">
               <div className="w-10 h-10 border-4 border-primary border-t-transparent rounded-full animate-spin"></div>
               <p className="text-gray-500 font-medium">Carregando vídeo...</p>
@@ -44,6 +35,15 @@ export default function Index() {
       >
         <InstitutionalVideo />
       </Suspense>
+      <AuthorityBar />
+      <InvisibleCosts />
+      <WhyChooseUs />
+      <TailoredSolutions />
+      <BirdsPyramid />
+      <ProductVisuals />
+      <ROISimulator />
+      <ROIResults />
+      <SlaSupport />
       <AdvancedFeatures />
       <Credibility />
       <FinalCTA />
