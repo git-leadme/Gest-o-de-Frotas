@@ -1,7 +1,5 @@
-import logoSvg from './logo.svg'
-
 export const images = {
-  logo: logoSvg,
+  logo: 'https://files.goskip.com/f/33d59663-e3a5-4f96-857c-6582531a6730',
   heroBg: 'https://img.usecurling.com/p/1920/1080?q=heavy%20trucks%20highway&color=blue',
   controlDashboard: 'https://img.usecurling.com/p/800/600?q=dashboard%20analytics&color=blue',
   tabletMockup: 'https://img.usecurling.com/p/1024/768?q=tablet%20dashboard%20map&color=blue',

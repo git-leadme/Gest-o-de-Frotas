@@ -26,15 +26,15 @@ export default function Layout() {
   return (
     <div className="min-h-screen flex flex-col font-sans">
       <header className="sticky top-0 z-50 w-full border-b bg-white shadow-sm">
-        <div className="container max-w-7xl mx-auto px-4 md:px-6 lg:px-8 h-20 flex items-center justify-between">
+        <div className="container max-w-7xl mx-auto px-4 md:px-6 lg:px-8 min-h-[5rem] py-3 flex items-center justify-between">
           <Link
             to="/"
-            className="flex-shrink-0 transition-opacity hover:opacity-90 flex items-center justify-center bg-white p-2 md:p-3 rounded-md shadow-md h-12 md:h-14"
+            className="flex-shrink-0 transition-opacity hover:opacity-90 flex items-center justify-center bg-white p-3 md:p-4 rounded-md shadow-md h-auto"
           >
             <img
               src={images.logo}
               alt="Carsystem Frotas"
-              className="block max-h-full w-auto object-contain"
+              className="block h-auto max-h-8 md:max-h-10 w-auto object-contain"
             />
           </Link>
           <div className="flex items-center gap-2 md:gap-4">
@@ -88,15 +88,15 @@ export default function Layout() {
       <footer className="bg-primary text-primary-foreground py-12 border-t border-primary-foreground/10">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-8 mb-12">
-            <div className="space-y-6">
+            <div className="space-y-6 flex flex-col">
               <Link
                 to="/"
-                className="inline-flex items-center justify-center transition-opacity hover:opacity-90 bg-white p-3 md:p-4 rounded-md shadow-sm h-14 md:h-16"
+                className="inline-flex items-center justify-center transition-opacity hover:opacity-90 bg-white p-4 md:p-5 rounded-md shadow-sm self-start h-auto"
               >
                 <img
                   src={images.logo}
                   alt="Carsystem Frotas"
-                  className="block max-h-full w-auto object-contain"
+                  className="block h-auto max-h-10 md:max-h-14 w-auto object-contain"
                 />
               </Link>
               <p className="text-white text-base max-w-md leading-relaxed">
