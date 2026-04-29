@@ -29,12 +29,14 @@ export default function Layout() {
         <div className="container max-w-7xl mx-auto px-4 md:px-6 lg:px-8 min-h-[5rem] py-3 flex items-center justify-between">
           <Link
             to="/"
-            className="flex-shrink-0 transition-opacity hover:opacity-90 block w-[140px] sm:w-[160px] md:w-[200px] py-2 mr-2"
+            className="flex-shrink-0 transition-opacity hover:opacity-90 block p-2 w-[140px] sm:w-[160px] md:w-[200px]"
           >
             <img
               src={images.logo}
               alt="Carsystem Frotas"
-              className="w-full h-auto object-contain"
+              className="w-full h-auto max-h-[3.5rem] object-contain"
+              width="200"
+              height="56"
             />
           </Link>
           <div className="flex items-center gap-2 md:gap-4">
@@ -75,9 +77,10 @@ export default function Layout() {
             )}
             <Button
               onClick={scrollToForm}
-              className="bg-secondary text-secondary-foreground hover:bg-secondary/90 font-bold"
+              className="bg-secondary text-secondary-foreground hover:bg-secondary/90 font-bold px-3 md:px-4 text-xs sm:text-sm whitespace-nowrap"
             >
-              Falar com Especialista
+              <span className="hidden sm:inline">Falar com Especialista</span>
+              <span className="inline sm:hidden">Especialista</span>
             </Button>
           </div>
         </div>
@@ -91,12 +94,14 @@ export default function Layout() {
             <div className="space-y-6 flex flex-col">
               <Link
                 to="/"
-                className="inline-block transition-opacity hover:opacity-90 bg-white p-4 sm:p-6 rounded-lg shadow-sm self-start w-[180px] md:w-[240px]"
+                className="inline-block transition-opacity hover:opacity-90 bg-white p-4 sm:p-6 rounded-xl shadow-sm self-start w-[200px] md:w-[260px]"
               >
                 <img
                   src={images.logo}
                   alt="Carsystem Frotas"
-                  className="w-full h-auto object-contain"
+                  className="w-full h-auto max-h-[4.5rem] object-contain"
+                  width="260"
+                  height="72"
                 />
               </Link>
               <p className="text-white text-base max-w-md leading-relaxed">
