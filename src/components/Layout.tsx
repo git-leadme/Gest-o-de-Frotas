@@ -29,13 +29,12 @@ export default function Layout() {
         <div className="container max-w-7xl mx-auto px-4 md:px-6 lg:px-8 h-20 flex items-center justify-between">
           <Link
             to="/"
-            className="flex-shrink-0 transition-opacity hover:opacity-90 flex items-center justify-center bg-white p-2 md:p-3 rounded-md shadow-md w-[140px] h-[48px] md:w-[180px] md:h-[56px]"
+            className="flex-shrink-0 transition-opacity hover:opacity-90 flex items-center justify-center bg-white p-2 md:p-3 rounded-md shadow-md h-12 md:h-14"
           >
             <img
               src={images.logo}
               alt="Carsystem Frotas"
-              className="w-full h-full object-contain"
-              style={{ aspectRatio: 'auto' }}
+              className="block max-h-full w-auto object-contain"
             />
           </Link>
           <div className="flex items-center gap-2 md:gap-4">
@@ -92,13 +91,12 @@ export default function Layout() {
             <div className="space-y-6">
               <Link
                 to="/"
-                className="inline-flex items-center justify-center transition-opacity hover:opacity-90 bg-white p-3 md:p-4 rounded-md shadow-sm w-[160px] h-[56px] md:w-[200px] md:h-[64px]"
+                className="inline-flex items-center justify-center transition-opacity hover:opacity-90 bg-white p-3 md:p-4 rounded-md shadow-sm h-14 md:h-16"
               >
                 <img
                   src={images.logo}
                   alt="Carsystem Frotas"
-                  className="w-full h-full object-contain"
-                  style={{ aspectRatio: 'auto' }}
+                  className="block max-h-full w-auto object-contain"
                 />
               </Link>
               <p className="text-white text-base max-w-md leading-relaxed">
