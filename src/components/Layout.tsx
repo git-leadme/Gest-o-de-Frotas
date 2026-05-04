@@ -32,10 +32,10 @@ export default function Layout() {
               <img
                 src={logoUrl}
                 alt="Carsystem Frotas"
-                className="h-8 md:h-10 w-auto object-contain"
+                className="h-10 md:h-12 lg:h-16 w-auto object-contain"
               />
             </Link>
-            <div className="hidden lg:flex items-center border-l-2 border-gray-100 pl-6 h-10">
+            <div className="hidden lg:flex items-center border-l-2 border-gray-100 pl-6 h-12">
               <span className="text-sm font-semibold text-slate-600 whitespace-nowrap tracking-tight">
                 +20 mil veículos monitorados
               </span>
@@ -98,7 +98,11 @@ export default function Layout() {
                 to="/"
                 className="inline-block transition-opacity hover:opacity-90 bg-white p-4 sm:p-6 rounded-xl shadow-sm self-start"
               >
-                <img src={logoUrl} alt="Carsystem Frotas" className="h-10 w-auto object-contain" />
+                <img
+                  src={logoUrl}
+                  alt="Carsystem Frotas"
+                  className="h-14 md:h-16 w-auto object-contain"
+                />
               </Link>
               <p className="text-white text-base max-w-md leading-relaxed">
                 Gestão Inteligente de Frotas com tecnologia de ponta para reduzir custos e aumentar
