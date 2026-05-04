@@ -39,7 +39,7 @@ export function AuthorityBar() {
           </div>
 
           <div className="flex-1 w-full overflow-hidden">
-            <p className="text-xs text-center md:text-left text-gray-400 mb-3 uppercase tracking-widest font-semibold">
+            <p className="text-xs text-center md:text-left text-gray-400 mb-3 uppercase tracking-widest font-semibold opacity-[0]">
               Empresas que confiam
             </p>
             <div className="flex gap-6 items-center justify-center md:justify-end opacity-60 grayscale hover:grayscale-0 transition-all duration-500 flex-wrap">
@@ -48,7 +48,7 @@ export function AuthorityBar() {
                   key={idx}
                   src={logo}
                   alt={`Parceiro ${idx + 1}`}
-                  className="h-8 w-auto object-contain"
+                  className="h-8 w-auto object-contain opacity-[0]"
                 />
               ))}
             </div>
