@@ -37,7 +37,7 @@ export default function Layout() {
             </Link>
             <div className="hidden lg:flex items-center border-l-2 border-gray-100 pl-6 h-12">
               <span className="text-sm font-semibold text-slate-600 whitespace-nowrap tracking-tight">
-                +20 mil veículos monitorados
+                +1 milhão de&nbsp;veículos monitorados
               </span>
             </div>
           </div>
