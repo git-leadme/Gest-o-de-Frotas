@@ -3,6 +3,7 @@ import { Button } from '@/components/ui/button'
 import { Toaster } from '@/components/ui/toaster'
 import { MapPin, LogOut, LayoutDashboard, LogIn, Phone, Mail, MessageCircle } from 'lucide-react'
 import { useAuth } from '@/hooks/use-auth'
+import logoUrl from '../assets/carsystem_novo-logo-83550.png'
 
 export default function Layout() {
   const { user, signOut } = useAuth()
@@ -29,7 +30,7 @@ export default function Layout() {
           <div className="flex items-center gap-4 md:gap-6 lg:gap-8">
             <Link to="/" className="flex-shrink-0 transition-opacity hover:opacity-90 block py-2">
               <img
-                src="/logo.png"
+                src={logoUrl}
                 alt="Carsystem Frotas"
                 className="h-8 md:h-10 w-auto object-contain"
               />
@@ -97,11 +98,7 @@ export default function Layout() {
                 to="/"
                 className="inline-block transition-opacity hover:opacity-90 bg-white p-4 sm:p-6 rounded-xl shadow-sm self-start"
               >
-                <img
-                  src="/logo.png"
-                  alt="Carsystem Frotas"
-                  className="h-10 w-auto object-contain"
-                />
+                <img src={logoUrl} alt="Carsystem Frotas" className="h-10 w-auto object-contain" />
               </Link>
               <p className="text-white text-base max-w-md leading-relaxed">
                 Gestão Inteligente de Frotas com tecnologia de ponta para reduzir custos e aumentar
