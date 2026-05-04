@@ -3,7 +3,8 @@ import { Button } from '@/components/ui/button'
 import { Toaster } from '@/components/ui/toaster'
 import { MapPin, LogOut, LayoutDashboard, LogIn, Phone, Mail, MessageCircle } from 'lucide-react'
 import { useAuth } from '@/hooks/use-auth'
-import logoUrl from '../assets/carsystem_novo-logo-83550.png'
+
+const logoUrl = '/Carsystem_LOGO NOVO.png'
 
 export default function Layout() {
   const { user, signOut } = useAuth()
@@ -32,12 +33,12 @@ export default function Layout() {
               <img
                 src={logoUrl}
                 alt="Carsystem Frotas"
-                className="h-10 md:h-12 lg:h-16 w-auto object-contain"
+                className="h-auto max-h-[48px] md:max-h-[60px] w-auto object-contain"
               />
             </Link>
             <div className="hidden lg:flex items-center border-l-2 border-gray-100 pl-6 h-12">
               <span className="text-sm font-semibold text-slate-600 whitespace-nowrap tracking-tight">
-                +1 milhão de&nbsp;veículos monitorados
+                +20 mil veículos monitorados
               </span>
             </div>
           </div>
@@ -101,7 +102,7 @@ export default function Layout() {
                 <img
                   src={logoUrl}
                   alt="Carsystem Frotas"
-                  className="h-14 md:h-16 w-auto object-contain"
+                  className="h-auto max-h-[48px] md:max-h-[60px] w-auto object-contain"
                 />
               </Link>
               <p className="text-white text-base max-w-md leading-relaxed">
