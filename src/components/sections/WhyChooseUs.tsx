@@ -29,7 +29,7 @@ export function WhyChooseUs() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12 max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-[#002b5c] mb-4 tracking-tight">
-            Por que escolher a Gestão Inteligente CarSystem?
+            Por que escolher a Gestão Inteligente Carsystem?
           </h2>
           <p className="text-lg text-slate-600">
             Benefícios reais que transformam a operação da sua frota do primeiro ao último
