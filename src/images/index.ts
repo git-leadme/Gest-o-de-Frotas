@@ -1,4 +1,4 @@
-const logoUrl = '/Carsystem_LOGO NOVO.png'
+const logoUrl = '/Carsystem_LOGO%20NOVO.png'
 
 export const images = {
   logo: logoUrl,
