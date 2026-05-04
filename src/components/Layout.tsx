@@ -3,8 +3,7 @@ import { Button } from '@/components/ui/button'
 import { Toaster } from '@/components/ui/toaster'
 import { MapPin, LogOut, LayoutDashboard, LogIn, Phone, Mail, MessageCircle } from 'lucide-react'
 import { useAuth } from '@/hooks/use-auth'
-
-const logoUrl = '/Carsystem_LOGO%20NOVO.png'
+import logoUrl from '@/assets/logo-carsystem-3-01441.png'
 
 export default function Layout() {
   const { user, signOut } = useAuth()
@@ -32,7 +31,7 @@ export default function Layout() {
             <Link to="/" className="flex-shrink-0 transition-opacity hover:opacity-90 block py-2">
               <img
                 src={logoUrl}
-                alt="Carsystem Frotas"
+                alt="Carsystem 25 Anos"
                 className="h-auto max-h-[40px] md:max-h-[60px] w-auto object-contain"
               />
             </Link>
@@ -101,7 +100,7 @@ export default function Layout() {
               >
                 <img
                   src={logoUrl}
-                  alt="Carsystem Frotas"
+                  alt="Carsystem 25 Anos"
                   className="h-auto max-h-[40px] md:max-h-[60px] w-auto object-contain"
                 />
               </Link>
