@@ -22,7 +22,7 @@ import {
   FormLabel,
   FormMessage,
 } from '@/components/ui/form'
-import { ArrowRight, ArrowLeft } from 'lucide-react'
+import { ArrowRight, ArrowLeft, CheckCircle2 } from 'lucide-react'
 
 const formSchema = z.object({
   fullName: z.string().min(2, 'Nome é obrigatório'),
@@ -83,8 +83,7 @@ export function LeadForm() {
       toast({
         description: 'Formulário enviado com sucesso! Entraremos em contato em breve.',
       })
-      form.reset()
-      setStep(1)
+      setStep(4)
     } catch (error) {
       toast({
         variant: 'destructive',
@@ -93,6 +92,31 @@ export function LeadForm() {
     } finally {
       setIsSubmitting(false)
     }
+  }
+
+  if (step === 4) {
+    return (
+      <div className="flex flex-col items-center justify-center text-center space-y-4 py-8 animate-fade-in">
+        <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-4 shadow-sm">
+          <CheckCircle2 className="h-8 w-8 text-green-600" />
+        </div>
+        <h3 className="text-2xl font-bold text-primary">Obrigado!</h3>
+        <p className="text-muted-foreground">
+          Seus dados foram enviados com sucesso. Um de nossos especialistas entrará em contato em
+          breve.
+        </p>
+        <Button
+          onClick={() => {
+            setStep(1)
+            form.reset()
+          }}
+          variant="outline"
+          className="mt-4"
+        >
+          Enviar nova mensagem
+        </Button>
+      </div>
+    )
   }
 
   return (

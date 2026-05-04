@@ -33,7 +33,7 @@ export default function Layout() {
               <img
                 src={logoUrl}
                 alt="Carsystem Frotas"
-                className="h-auto max-h-[48px] md:max-h-[60px] w-auto object-contain"
+                className="h-auto max-h-[60px] w-auto object-contain"
               />
             </Link>
             <div className="hidden lg:flex items-center border-l-2 border-gray-100 pl-6 h-12">
@@ -102,8 +102,8 @@ export default function Layout() {
                 <img
                   src={logoUrl}
                   alt="Carsystem Frotas"
-                  className="h-auto max-h-[48px] md:max-h-[60px] w-auto object-contain"
-                />
+                  className="h-auto max-h-[60px] w-auto object-contain"
+                />{' '}
               </Link>
               <p className="text-white text-base max-w-md leading-relaxed">
                 Gestão Inteligente de Frotas com tecnologia de ponta para reduzir custos e aumentar
