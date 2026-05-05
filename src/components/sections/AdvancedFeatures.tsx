@@ -208,7 +208,7 @@ export function AdvancedFeatures() {
               poster="https://img.usecurling.com/p/800/1000?q=truck%20driver%20face&color=blue"
             >
               <source
-                src="https://cdn.coverr.co/videos/coverr-driving-on-a-highway-in-the-mountains-3921/1080p.mp4"
+                src="https://cdn.pixabay.com/video/2023/10/22/186129-877373300_large.mp4"
                 type="video/mp4"
               />
             </video>

@@ -1,10 +1,10 @@
 import { useState } from 'react'
 import { Play } from 'lucide-react'
 
-export function InstitutionalVideo() {
+export default function InstitutionalVideo() {
   const [isPlaying, setIsPlaying] = useState(false)
 
-  const videoId = 'Qica1I6s-bA'
+  const videoId = 'f_fL02vXN6k'
 
   return (
     <section id="como-funciona" className="py-16 md:py-24 bg-slate-50 w-full">

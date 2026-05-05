@@ -15,11 +15,7 @@ import { FinalCTA } from '@/components/sections/FinalCTA'
 import { Testimonials } from '@/components/sections/Testimonials'
 import { FAQ } from '@/components/sections/FAQ'
 
-const InstitutionalVideo = lazy(() =>
-  import('@/components/sections/InstitutionalVideo').then((m) => ({
-    default: m.InstitutionalVideo,
-  })),
-)
+const InstitutionalVideo = lazy(() => import('@/components/sections/InstitutionalVideo'))
 
 export default function Index() {
   return (
