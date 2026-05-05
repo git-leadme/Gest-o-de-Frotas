@@ -81,8 +81,8 @@ export default function Layout() {
               onClick={scrollToForm}
               className="bg-secondary text-secondary-foreground hover:bg-secondary/90 font-bold px-3 md:px-4 text-xs sm:text-sm whitespace-nowrap"
             >
-              <span className="hidden sm:inline">Falar com Especialista</span>
-              <span className="inline sm:hidden">Especialista</span>
+              <span className="hidden sm:inline">Agendar Demonstração</span>
+              <span className="inline sm:hidden">Agendar</span>
             </Button>
           </div>
         </div>

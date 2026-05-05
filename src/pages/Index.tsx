@@ -12,6 +12,8 @@ import { SlaSupport } from '@/components/sections/SlaSupport'
 import { AdvancedFeatures } from '@/components/sections/AdvancedFeatures'
 import { Credibility } from '@/components/sections/Credibility'
 import { FinalCTA } from '@/components/sections/FinalCTA'
+import { Testimonials } from '@/components/sections/Testimonials'
+import { FAQ } from '@/components/sections/FAQ'
 
 const InstitutionalVideo = lazy(() =>
   import('@/components/sections/InstitutionalVideo').then((m) => ({
@@ -52,6 +54,8 @@ export default function Index() {
       <ROIResults />
       <SlaSupport />
       <AdvancedFeatures />
+      <Testimonials />
+      <FAQ />
       <Credibility />
       <FinalCTA />
     </div>

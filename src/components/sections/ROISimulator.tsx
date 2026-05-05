@@ -134,7 +134,7 @@ export function ROISimulator() {
                   onClick={scrollToForm}
                   className="w-full sm:w-auto bg-[#e62e2d] hover:bg-[#cc2222] text-white text-lg py-7 px-8 rounded-xl font-bold transition-transform hover:-translate-y-1 shadow-lg shadow-red-500/20"
                 >
-                  Solicitar Consultoria <ChevronRight className="ml-2 w-5 h-5" />
+                  Agendar Demonstração <ChevronRight className="ml-2 w-5 h-5" />
                 </Button>
               </div>
             </div>

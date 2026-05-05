@@ -135,7 +135,7 @@ export function LeadForm() {
         </div>
 
         {step === 1 && (
-          <div className="space-y-4 animate-fade-in">
+          <div className="space-y-6 animate-fade-in">
             <FormField
               control={form.control}
               name="fullName"
@@ -165,15 +165,15 @@ export function LeadForm() {
             <Button
               type="button"
               onClick={() => handleNextStep(['fullName', 'email'])}
-              className="w-full bg-secondary hover:bg-secondary/90 text-secondary-foreground font-bold h-12 mt-4"
+              className="w-full bg-secondary hover:bg-secondary/90 text-secondary-foreground font-bold h-12 mt-6"
             >
-              Próximo Passo <ArrowRight className="ml-2 h-4 w-4" />
+              Falar com Especialista <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
           </div>
         )}
 
         {step === 2 && (
-          <div className="space-y-4 animate-fade-in">
+          <div className="space-y-6 animate-fade-in">
             <FormField
               control={form.control}
               name="phone"
@@ -238,14 +238,14 @@ export function LeadForm() {
                 onClick={() => handleNextStep(['phone', 'company', 'fleetSize'])}
                 className="flex-1 bg-secondary hover:bg-secondary/90 text-secondary-foreground font-bold h-12"
               >
-                Próximo Passo <ArrowRight className="ml-2 h-4 w-4" />
+                Falar com Especialista <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </div>
           </div>
         )}
 
         {step === 3 && (
-          <div className="space-y-4 animate-fade-in">
+          <div className="space-y-6 animate-fade-in">
             <FormField
               control={form.control}
               name="message"
@@ -277,7 +277,7 @@ export function LeadForm() {
                 className="w-full bg-secondary hover:bg-secondary/90 text-secondary-foreground font-bold h-14 text-sm md:text-base shadow-lg transition-transform hover:-translate-y-0.5"
                 disabled={isSubmitting}
               >
-                {isSubmitting ? 'Enviando...' : 'Quero Ver Minha Economia na Prática'}
+                {isSubmitting ? 'Enviando...' : 'Agendar Demonstração'}
               </Button>
             </div>
           </div>

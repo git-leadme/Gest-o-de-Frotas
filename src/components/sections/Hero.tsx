@@ -30,21 +30,20 @@ export function Hero() {
               </div>
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-[1.15] tracking-tight">
-              Mais controle.
-              <br />
-              Menos prejuízo.
+              Gestão de Frotas Inteligente Carsystem:
+              <br className="hidden md:block" /> Mais Controle, Menos Prejuízo.
             </h1>
             <p className="text-lg md:text-xl text-primary-foreground/90 font-light leading-relaxed">
-              A solução definitiva em gestão de frotas. Reduza custos com combustível e manutenção,
-              evite acidentes e aumente o controle total da sua operação.
+              A solução definitiva em gestão de frotas, impulsionada por IA e telemetria avançada,
+              para reduzir custos e aumentar o controle total da sua operação.
             </p>
           </div>
           <div
             id="lead-form"
-            className="bg-white rounded-2xl shadow-2xl p-6 md:p-8 text-foreground animate-fade-in lg:ml-auto w-full max-w-md border border-gray-100 relative"
+            className="bg-white rounded-2xl shadow-2xl p-8 md:p-10 text-foreground animate-fade-in lg:ml-auto w-full max-w-md border border-gray-100 relative"
           >
             <div className="absolute -top-4 -right-4 bg-secondary text-primary font-bold px-4 py-2 rounded-lg shadow-lg rotate-3">
-              Fale com um Especialista
+              Agendar Demonstração
             </div>
             <h2 className="text-2xl font-bold mb-6 text-center text-primary mt-2">
               Agende sua Demonstração Gratuita
