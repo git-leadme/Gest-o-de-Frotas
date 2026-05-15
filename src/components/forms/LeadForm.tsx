@@ -14,7 +14,6 @@ import {
 } from '@/components/ui/select'
 import { useToast } from '@/hooks/use-toast'
 import { createLead } from '@/services/leads'
-import { trackLeadConversion } from '@/lib/analytics/googleAds'
 import {
   Form,
   FormControl,
@@ -81,8 +80,6 @@ export function LeadForm() {
         fleetSize: values.fleetSize,
         message: values.message,
       })
-
-      trackLeadConversion()
 
       toast({
         description: 'Formulário enviado com sucesso! Entraremos em contato em breve.',
