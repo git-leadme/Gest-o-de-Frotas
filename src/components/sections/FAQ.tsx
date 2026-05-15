@@ -14,7 +14,7 @@ const faqs = [
   {
     question: 'Como funciona o suporte técnico?',
     answer:
-      'Temos uma equipe especializada disponível 24/7. Além disso, garantimos SLA de 4 horas para manutenções críticas, assegurando a alta disponibilidade do seu monitoramento.',
+      'Contamos com uma equipe especializada preparada para apoiar em dúvidas, orientações e demandas operacionais relacionadas ao monitoramento, atuando com processos estruturados de atendimento e acompanhamento para garantir agilidade na identificação e tratativa de ocorrências, sempre com foco na continuidade operacional e na alta disponibilidade dos serviços.',
   },
   {
     question: 'Quais são os planos de serviço disponíveis?',
