@@ -1,5 +1,5 @@
 export default function InstitutionalVideo() {
-  const videoId = 'f_fL02vXN6k'
+  const videoId = 'Qica1I6s-bA'
 
   return (
     <section id="como-funciona" className="py-16 md:py-24 bg-slate-50 w-full">
@@ -15,14 +15,14 @@ export default function InstitutionalVideo() {
           </p>
         </div>
 
-        {/* Vídeo direto (SEM thumbnail, SEM clique, SEM animação) */}
+        {/* Vídeo */}
         <div
           className="w-full max-w-5xl mx-auto relative rounded-2xl overflow-hidden shadow-2xl border border-slate-200 bg-black"
-          style={{ paddingTop: '56.25%' }} // proporção 16:9 garantida
+          style={{ paddingTop: '56.25%' }} // 16:9 garantido
         >
           <iframe
             className="absolute top-0 left-0 w-full h-full"
-            src={`https://www.youtube-nocookie.com/embed/${videoId}?rel=0&playsinline=1`}
+            src={`https://www.youtube.com/embed/${videoId}?rel=0&playsinline=1`}
             title="Vídeo Carsystem"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
