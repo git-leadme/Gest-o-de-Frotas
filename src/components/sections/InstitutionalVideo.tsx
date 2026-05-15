@@ -21,39 +21,37 @@ export default function InstitutionalVideo() {
         </div>
 
         {/* Vídeo */}
-        <div className="w-full max-w-5xl mx-auto relative rounded-2xl overflow-hidden shadow-2xl border border-slate-200 aspect-video bg-black group">
+        <div className="w-full max-w-5xl mx-auto relative rounded-2xl overflow-hidden shadow-2xl border border-slate-200 aspect-video bg-black">
           {!isPlaying ? (
-            <div
-              className="absolute inset-0 cursor-pointer flex items-center justify-center focus:outline-none"
+            <button
               onClick={() => setIsPlaying(true)}
-              role="button"
               aria-label="Reproduzir vídeo"
+              className="absolute inset-0 z-20 w-full h-full flex items-center justify-center cursor-pointer"
             >
-              {/* THUMBNAIL SEGURA */}
+              {/* Thumbnail */}
               <img
                 src={`https://img.youtube.com/vi/${videoId}/hqdefault.jpg`}
                 alt="Miniatura do vídeo"
-                className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                className="absolute inset-0 w-full h-full object-cover"
                 loading="lazy"
               />
 
-              {/* Overlay leve */}
-              <div className="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition" />
+              {/* Overlay (não bloqueia clique) */}
+              <div className="absolute inset-0 bg-black/20 pointer-events-none" />
 
               {/* Botão Play */}
-              <div className="relative z-10 bg-red-600 rounded-full p-5 shadow-xl group-hover:scale-110 transition">
+              <div className="relative z-10 bg-red-600 rounded-full p-5 shadow-xl hover:scale-110 transition">
                 <Play className="w-10 h-10 text-white fill-white" />
               </div>
-            </div>
+            </button>
           ) : (
             <iframe
               className="absolute top-0 left-0 w-full h-full"
-              src={`https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1&rel=0&playsinline=1`}
+              src={`https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&mute=1&rel=0&playsinline=1`}
               title="Vídeo Carsystem"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
-              loading="lazy"
             />
           )}
         </div>
